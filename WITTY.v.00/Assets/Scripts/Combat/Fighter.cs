@@ -50,7 +50,7 @@ namespace RPG.Combat
         private bool GetIsInRange(){
             return Vector3.Distance(transform.position,target.transform.position)<weaponRange;
         }
-        public bool CanAttack(CombatTarget combatTarget)
+        public bool CanAttack(GameObject combatTarget)
         {
             if(combatTarget == null)
             {
@@ -59,11 +59,11 @@ namespace RPG.Combat
             Health targetToTest=combatTarget.GetComponent<Health>();
             return targetToTest!=null && !targetToTest.IsDead();
         }
-        public void Attack(CombatTarget combatTarget)
+        public void Attack(GameObject combatTarget)
         {
             GetComponent<ActionScheduler>().StarAction(this);
-              target=combatTarget.GetComponent<Health>();
-                print("attack!");
+            target=combatTarget.GetComponent<Health>();
+               
         }
 
         public void Cancel()
