@@ -15,6 +15,14 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1831285438, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: m_Acceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831285438, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 1205471617880971090, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_Name
@@ -28,7 +36,7 @@ PrefabInstance:
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 438.5606
+      value: 449.99
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
@@ -38,7 +46,7 @@ PrefabInstance:
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 877.7005
+      value: 875.9
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
@@ -122,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 5
+  suspicionTime: 5
 --- !u!4 &9038656915554745495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
