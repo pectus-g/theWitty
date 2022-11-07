@@ -6,18 +6,7 @@ namespace  RPG.Control
 {
     public class PatrolPath : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
    private void OnDrawGizmos()
    {
     const float waypointGizmoRadius = 0.3f;
