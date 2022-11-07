@@ -48,18 +48,26 @@ namespace RPG.Movement
         GetComponent<Animator>().SetFloat("forwardSpeed",speed);
     }
 
-    public object CaptureState()
+    public object CaptureState()//what you want to save this field will capture but must have serialiblevector 3
     {
-//what you want to save this field will capture but must have serialiblevector 3
-return new SerializableVector3(transform.position);//captures pos
+    Dictionary<string,object> data =new Dictionary<string,object>();
+    data["position"] = new SerializableVector3(transform.position);
+    data["rotation"] = new SerializableVector3(transform.eulerAngles);
+    return data;
+//return new SerializableVector3(transform.position);//captures pos
     }
     public void RestoreState(object state)
-    {
-            SerializableVector3 position =(SerializableVector3)state;//approve the data is serialized
+    {//this is optional for capturing multiple parameters
+            Dictionary<string,object> data =(Dictionary<string,object>)state;
+            GetComponent<NavMeshAgent>().enabled=false;
+            transform.position=((SerializableVector3)data["position"]).ToVector();
+            transform.eulerAngles=((SerializableVector3)data["rotation"]).ToVector();
+            GetComponent<NavMeshAgent>().enabled=true;
+            /*SerializableVector3 position =(SerializableVector3)state;//approve the data is serialized
             GetComponent<NavMeshAgent>().enabled=false;//navmesh sometimes gives some probles we will froze for a moment
             transform.position=position.ToVector();
-            GetComponent<NavMeshAgent>().enabled=true;
+            GetComponent<NavMeshAgent>().enabled=true;*/
     }
 }
 
-}
+} 

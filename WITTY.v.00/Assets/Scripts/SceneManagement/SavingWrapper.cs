@@ -9,7 +9,15 @@ public class SavingWrapper : MonoBehaviour
 {
 
 const string defaultSaveFile = "save";
+[SerializeField] float fadeInTime=0.2f;
 // listen key events
+    IEnumerator Start()
+    {
+        Fader fader=FindObjectOfType<Fader>();
+        fader.FadeOutImmediate();
+       yield return GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile);
+       yield return fader.FadeIn(fadeInTime);
+    }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.L))
@@ -21,11 +29,11 @@ const string defaultSaveFile = "save";
             Save();
         }
     }
-    private void Load()
+    public void Load()
     {
         GetComponent<SavingSystem>().Load(defaultSaveFile);
     }
-     private void Save()
+     public void Save()
     {
         GetComponent<SavingSystem>().Save(defaultSaveFile);
     }
