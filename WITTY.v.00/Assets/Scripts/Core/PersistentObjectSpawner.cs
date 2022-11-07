@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+//stays between the scenes
+
 namespace RPG.Core
 {
 public class PersistentObjectSpawner : MonoBehaviour

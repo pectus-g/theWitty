@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 
 using RPG.Core;
+using RPG.Saving;
 
 namespace RPG.Movement
 {
-    public class Mover : MonoBehaviour , IAction
+    public class Mover : MonoBehaviour , IAction, ISaveable
 {
     [SerializeField] Transform target;
     [SerializeField] float maxSpeed = 6f;
@@ -45,6 +46,19 @@ namespace RPG.Movement
         Vector3 localVelocity=transform.InverseTransformDirection(velocity);
         float speed=localVelocity.z;
         GetComponent<Animator>().SetFloat("forwardSpeed",speed);
+    }
+
+    public object CaptureState()
+    {
+//what you want to save this field will capture but must have serialiblevector 3
+return new SerializableVector3(transform.position);//captures pos
+    }
+    public void RestoreState(object state)
+    {
+            SerializableVector3 position =(SerializableVector3)state;//approve the data is serialized
+            GetComponent<NavMeshAgent>().enabled=false;//navmesh sometimes gives some probles we will froze for a moment
+            transform.position=position.ToVector();
+            GetComponent<NavMeshAgent>().enabled=true;
     }
 }
 
