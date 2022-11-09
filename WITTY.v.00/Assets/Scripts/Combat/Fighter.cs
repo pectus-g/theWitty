@@ -9,7 +9,8 @@ namespace RPG.Combat
       
         [SerializeField] float timeBetweenAttacks=1f;
         
-        [SerializeField] Transform handTransform =null;//el yerine kuyruk kullanmak istediğim zamanalr olacak burayı editle
+        [SerializeField] Transform rightHandTransform =null;//el yerine kuyruk kullanmak istediğim zamanalr olacak burayı editle
+        [SerializeField] Transform leftHandTransform =null;
         [SerializeField] Weapon defaultWeapon =null;
         Health target;
         float timeSinceLastAttack=Mathf.Infinity;
@@ -88,7 +89,7 @@ namespace RPG.Combat
         {
             currentWeapon=weapon;
             Animator animator = GetComponent<Animator>();
-            weapon.Spawn(handTransform,animator);
+            weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
       
     }

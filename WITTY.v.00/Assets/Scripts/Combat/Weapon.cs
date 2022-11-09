@@ -10,10 +10,14 @@ public class Weapon : ScriptableObject
         [SerializeField] AnimatorOverrideController animatorOverride=null;
         [SerializeField] float weaponDamage=5f;
         [SerializeField] float weaponRange =2f;
+        [SerializeField] bool isRightHanded=true;
 
-        public void Spawn(Transform handTransform,Animator animator)
+        public void Spawn(Transform rightHand,Transform leftHand,Animator animator)
         {   if(weaponPrefab!= null)
         {
+            Transform handTransform;
+            if(isRightHanded) handTransform=rightHand;
+            else handTransform = leftHand;
             Instantiate (weaponPrefab,handTransform);
         }
            if(animatorOverride!=null)//unarmed anim works

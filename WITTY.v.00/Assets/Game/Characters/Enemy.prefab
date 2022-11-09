@@ -21,6 +21,14 @@ PrefabInstance:
       propertyPath: handTransform
       value: 
       objectReference: {fileID: 7753555400879869963}
+    - target: {fileID: 1831285434, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 1883364366602485529}
+    - target: {fileID: 1831285434, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 7753555400879869963}
     - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
       propertyPath: health
       value: 20
@@ -96,6 +104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549123495138171334, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5301781458131312087, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
@@ -339,6 +352,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3d800f81d2989d4a9a9dc8bb15f52a7, type: 3}
+--- !u!4 &1883364366602485529 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7467181971488297255, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 9044300732831559230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7753555400879869963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1592556932159995445, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
