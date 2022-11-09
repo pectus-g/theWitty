@@ -17,7 +17,7 @@ namespace RPGCharacterAnims
 	{
 		void OnGUI()
 		{
-			EditorGUILayout.LabelField("Before attempting to use the RPG Character Animation Mecanim Animation Pack FREE, you must first ensure that the inputs and layers are correctly defined.  There is an included Input.preset and Layer.preset which contains all the settings that you can load in.\n \nThe README and other documents are located in the Documentation folders.\n \nYou can remove this message by deleting the SetupInputLayers.cs script in the Editor folder.", EditorStyles.wordWrappedLabel);
+			EditorGUILayout.LabelField("Before attempting to use the RPG Character Animation Mecanim Animation Pack, you must first ensure that the inputs and layers are correctly defined.  There is an included Input.preset and Layer.preset which contains all the settings that you can load in.\n \nThe README and other documents are located in the Documentation folders.\n \nYou can remove this message by deleting the SetupInputLayers.cs script in the Editor folder.", EditorStyles.wordWrappedLabel);
 		}
 	}
 }
