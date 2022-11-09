@@ -7,6 +7,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1831285434, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 995c2d37aec0d44f1b1f1d866f75adb6,
+        type: 2}
+    - target: {fileID: 1831285434, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 995c2d37aec0d44f1b1f1d866f75adb6,
+        type: 2}
+    - target: {fileID: 1831285434, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 7753555400879869963}
     - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
       propertyPath: health
       value: 20
@@ -83,6 +97,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5301781458131312087, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
 --- !u!1 &9038656914840864097 stripped
@@ -131,6 +150,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseDistance: 5
   suspicionTime: 5
+  patrolPath: {fileID: 0}
+  waypointTolerance: 1
+  waypointDwellTime: 2
+  patrolSpeedFraction: 0.2
 --- !u!4 &9038656915554745495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
@@ -316,3 +339,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3d800f81d2989d4a9a9dc8bb15f52a7, type: 3}
+--- !u!4 &7753555400879869963 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1592556932159995445, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 9044300732831559230}
+  m_PrefabAsset: {fileID: 0}
