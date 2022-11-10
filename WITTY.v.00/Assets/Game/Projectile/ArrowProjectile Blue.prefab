@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7378182088097027319
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.atime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.ctime0
+      value: 21010
+      objectReference: {fileID: 0}
+    - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.9245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.5223244
+      objectReference: {fileID: 0}
+    - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.09158063
+      objectReference: {fileID: 0}
+    - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.a
+      value: 0.41568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576140159672664567, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.658
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493322079871073976, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_Name
+      value: ArrowProjectile Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eaa3b846536c24e18b9d4c2e59931366, type: 3}
