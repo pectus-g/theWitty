@@ -30,17 +30,17 @@ PrefabInstance:
     - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
       propertyPath: m_Parameters.colorGradient.key0.b
-      value: 0
+      value: 0.0373313
       objectReference: {fileID: 0}
     - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
       propertyPath: m_Parameters.colorGradient.key0.g
-      value: 0
+      value: 0.8392157
       objectReference: {fileID: 0}
     - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
       propertyPath: m_Parameters.colorGradient.key0.r
-      value: 0.8396226
+      value: 0.0039215586
       objectReference: {fileID: 0}
     - target: {fileID: 812322694459096448, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
@@ -72,10 +72,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.327
       objectReference: {fileID: 0}
+    - target: {fileID: 5083994623857820524, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: isHoming
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083994623857820524, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 3427684828892447738, guid: cbe1774245e374f7db66bb711e19d946,
+        type: 3}
     - target: {fileID: 7493322079871073976, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
       propertyPath: m_Name
-      value: ArrowProjectile red
+      value: ArrowProjectile green
       objectReference: {fileID: 0}
     - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
@@ -95,7 +106,7 @@ PrefabInstance:
     - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 7700900247322120754, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}

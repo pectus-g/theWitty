@@ -47,6 +47,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.658
       objectReference: {fileID: 0}
+    - target: {fileID: 5083994623857820524, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: isHoming
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083994623857820524, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 8995641588047699389, guid: 9197c9d2e39454d04bb6119086972de3,
+        type: 3}
     - target: {fileID: 7493322079871073976, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
       propertyPath: m_Name
