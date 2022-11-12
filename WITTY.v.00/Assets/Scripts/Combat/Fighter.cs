@@ -1,10 +1,11 @@
 using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
+using RPG.Saving;
 
 namespace RPG.Combat
 {
-    public class Fighter: MonoBehaviour , IAction
+    public class Fighter: MonoBehaviour , IAction, ISaveable
     {
       
         [SerializeField] float timeBetweenAttacks=1f;
@@ -12,12 +13,17 @@ namespace RPG.Combat
         [SerializeField] Transform rightHandTransform =null;//el yerine kuyruk kullanmak istediğim zamanalr olacak burayı editle
         [SerializeField] Transform leftHandTransform =null;
         [SerializeField] Weapon defaultWeapon =null;
+        
         Health target;
         float timeSinceLastAttack=Mathf.Infinity;
         Weapon currentWeapon =null;
         private void Start()
         {
+          if(currentWeapon==null)
+          {
             EquipWeapon(defaultWeapon);
+          }
+            
         }
         private void Update()
         {   
@@ -60,7 +66,7 @@ namespace RPG.Combat
             {
                 target.TakeDamage(currentWeapon.GetDamage());
             }
-           
+            
         }
         void Shoot()
         {
@@ -103,6 +109,17 @@ namespace RPG.Combat
             Animator animator = GetComponent<Animator>();
             weapon.Spawn(rightHandTransform, leftHandTransform, animator);
         }
+        public object CaptureState()
+        {
+            return currentWeapon.name;
+        }
+        public void RestoreState(object state)
+        {   string weaponName=(string)state;
+
+              Weapon weapon=Resources.Load<Weapon>(weaponName);
+              EquipWeapon(weapon);
+        }
+
       
     }
 }

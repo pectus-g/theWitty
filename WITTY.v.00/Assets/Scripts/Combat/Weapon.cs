@@ -25,9 +25,14 @@ public class Weapon : ScriptableObject
             GameObject weapon = Instantiate (weaponPrefab,handTransform);
             weapon.name=weaponName;
         }
+           var overrideController=animator.runtimeAnimatorController as AnimatorOverrideController;
            if(animatorOverride!=null)//unarmed anim works
            {
             animator.runtimeAnimatorController=animatorOverride;
+           }
+           else if(overrideController!=null)
+           {
+            animator.runtimeAnimatorController=overrideController.runtimeAnimatorController;
            }
         
         }
