@@ -2,6 +2,7 @@ using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
 using RPG.Saving;
+using RPG.Attributes;
 
 namespace RPG.Combat
 {
@@ -13,6 +14,7 @@ namespace RPG.Combat
         [SerializeField] Transform rightHandTransform =null;//el yerine kuyruk kullanmak istediğim zamanalr olacak burayı editle
         [SerializeField] Transform leftHandTransform =null;
         [SerializeField] Weapon defaultWeapon =null;
+       
         
         Health target;
         float timeSinceLastAttack=Mathf.Infinity;
@@ -22,6 +24,7 @@ namespace RPG.Combat
           if(currentWeapon==null)
           {
             EquipWeapon(defaultWeapon);
+         
           }
             
         }
