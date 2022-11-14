@@ -16,6 +16,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] GameObject[] destroyOnHit=null;
     [SerializeField] float lifeAfterImpact =2;//bunu yanar görünüm için arttır
     Health target = null;
+    GameObject instigator=null;
     float damage =0;
 
     void Start()
@@ -33,10 +34,11 @@ public class Projectile : MonoBehaviour
         transform.Translate(Vector3.forward*speed*Time.deltaTime);//move to the targer
 
     }
-    public void SetTarget(Health target,float damage)
+    public void SetTarget(Health target,GameObject instigator, float damage)
     {
         this.target=target;
         this.damage = damage;
+        this.instigator=instigator;
 
         Destroy(gameObject,maxLifeTime);
     }
@@ -50,7 +52,7 @@ public class Projectile : MonoBehaviour
     {
         if(other.GetComponent<Health>()!=target) return; // if collision object has health component take damage if not return null
         if(target.IsDead()) return;
-        target.TakeDamage(damage);
+        target.TakeDamage(instigator, damage);
 
         speed=0;
 

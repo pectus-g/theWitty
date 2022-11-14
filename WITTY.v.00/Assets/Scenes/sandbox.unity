@@ -108,7 +108,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 49.7
+    agentSlope: 41.3
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -746,12 +746,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481966, guid: 010ab566711b9084fad5f5ed2c31d831,
     type: 3}
   m_PrefabInstance: {fileID: 138359238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &141415223 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6971386665176679982, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1908439467}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &252692067
 PrefabInstance:
@@ -3000,7 +2994,7 @@ PrefabInstance:
     - target: {fileID: 9038656915554745495, guid: c62ea9a2de6504adeb0ee9a5661818f8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.67
+      value: 58.54
       objectReference: {fileID: 0}
     - target: {fileID: 9038656915554745495, guid: c62ea9a2de6504adeb0ee9a5661818f8,
         type: 3}
@@ -3010,7 +3004,7 @@ PrefabInstance:
     - target: {fileID: 9038656915554745495, guid: c62ea9a2de6504adeb0ee9a5661818f8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -142.44
+      value: -138.45
       objectReference: {fileID: 0}
     - target: {fileID: 9038656915554745495, guid: c62ea9a2de6504adeb0ee9a5661818f8,
         type: 3}
@@ -3408,11 +3402,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 642575143528479580, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: startingLevel
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4469248532855470848, guid: ee911e17e79304f4490c7e7fb22dbb1c,
         type: 3}
       propertyPath: m_Name
@@ -3472,66 +3461,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469248533203486685, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_ScreenY
-      value: 0.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469248533350885936, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.722412
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469248533350885936, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.6941757
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469248533350885936, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 11.127441
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469248534476924574, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.722412
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469248534476924574, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.6941757
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469248534476924574, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 11.127441
-      objectReference: {fileID: 0}
-    - target: {fileID: 5439256427046124513, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5439256427046124513, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.064
-      objectReference: {fileID: 0}
-    - target: {fileID: 5439256427046124513, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6613163225507702783, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: glows
-      value: 
-      objectReference: {fileID: 141415223}
-    - target: {fileID: 6613163225507702783, guid: ee911e17e79304f4490c7e7fb22dbb1c,
-        type: 3}
-      propertyPath: defaultWeaponName
-      value: Sword
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee911e17e79304f4490c7e7fb22dbb1c, type: 3}

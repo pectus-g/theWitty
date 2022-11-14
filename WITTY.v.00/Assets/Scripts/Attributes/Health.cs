@@ -11,7 +11,7 @@ namespace RPG.Attributes
         bool isDead=false;
         private void Start()
         {
-            healthPoints = GetComponent<BaseStats>().GetHealth();
+            healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         public bool IsDead()
@@ -19,15 +19,21 @@ namespace RPG.Attributes
             return isDead;
         }
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject instigator, float damage)
         {
             healthPoints =Mathf.Max(healthPoints - damage,0);
             print(healthPoints);
             if(healthPoints<=0)
             {
                 Die();
+                AwardExperience(instigator);
             }
         }
+        public float GetPercentage()
+        {
+         return 100*(healthPoints / GetComponent<BaseStats>().GetStat(Stat.Health)) ;   
+        }
+
         private void Die()
         {   if(isDead) return;
             isDead=true;
@@ -35,6 +41,15 @@ namespace RPG.Attributes
             GetComponent<ActionScheduler>().CancelCurrentAction();
 
         }
+        private void AwardExperience(GameObject instigator)
+        {
+            Experience experience=instigator.GetComponent<Experience>();
+            if(experience==null) return;
+
+            experience.GainExperience(GetComponent<BaseStats>().GetStat(Stat.ExperienceReward));
+
+        }
+
         public object CaptureState()
         {
 //what you want to save this field will capture but must have serialiblevector 3

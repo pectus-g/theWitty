@@ -108,7 +108,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 48.4
+    agentSlope: 43.4
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -193,32 +193,32 @@ PrefabInstance:
     - target: {fileID: 4469248533350885936, guid: ee911e17e79304f4490c7e7fb22dbb1c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.745963
+      value: 12.291559
       objectReference: {fileID: 0}
     - target: {fileID: 4469248533350885936, guid: ee911e17e79304f4490c7e7fb22dbb1c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.637239
+      value: 8.710397
       objectReference: {fileID: 0}
     - target: {fileID: 4469248533350885936, guid: ee911e17e79304f4490c7e7fb22dbb1c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.108789
+      value: -0.30163193
       objectReference: {fileID: 0}
     - target: {fileID: 4469248534476924574, guid: ee911e17e79304f4490c7e7fb22dbb1c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.745963
+      value: 12.291559
       objectReference: {fileID: 0}
     - target: {fileID: 4469248534476924574, guid: ee911e17e79304f4490c7e7fb22dbb1c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.637239
+      value: 8.710397
       objectReference: {fileID: 0}
     - target: {fileID: 4469248534476924574, guid: ee911e17e79304f4490c7e7fb22dbb1c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.108789
+      value: -0.30163193
       objectReference: {fileID: 0}
     - target: {fileID: 5439256427046124513, guid: ee911e17e79304f4490c7e7fb22dbb1c,
         type: 3}
