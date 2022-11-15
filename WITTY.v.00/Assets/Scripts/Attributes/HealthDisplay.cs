@@ -16,7 +16,7 @@ public class HealthDisplay:MonoBehaviour
 
     private void Update()
     {
-        GetComponent<Text>().text= String.Format( "{0:0}%", health.GetPercentage());
+        GetComponent<Text>().text= String.Format( "{0:0}/{1:0}", health.GetHealthPoints(),health.GetMaxHealthPoints());
     }
 }
 }

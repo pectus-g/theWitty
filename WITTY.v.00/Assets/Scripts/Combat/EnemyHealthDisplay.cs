@@ -24,7 +24,7 @@ public class EnemyHealthDisplay:MonoBehaviour
             return;
         }
         Health health=fighter.GetTarget();
-        GetComponent<Text>().text= String.Format( "{0:0}%", health.GetPercentage());
+        GetComponent<Text>().text= String.Format("{0:0}/{1:0}", health.GetHealthPoints(),health.GetMaxHealthPoints());
     }
 }
 }
