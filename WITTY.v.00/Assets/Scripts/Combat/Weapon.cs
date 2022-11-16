@@ -10,6 +10,7 @@ public class Weapon : ScriptableObject
       
         [SerializeField] AnimatorOverrideController animatorOverride=null;
         [SerializeField] float weaponDamage=5f;
+        [SerializeField] float percentageBonus=0;
         [SerializeField] float weaponRange =2f;
         [SerializeField] bool isRightHanded=true;
         [SerializeField] Projectile projectile =null;
@@ -68,6 +69,10 @@ public class Weapon : ScriptableObject
         public float GetDamage()
         {
             return weaponDamage;
+        }
+        public float GetPercentageBonus()
+        {
+            return percentageBonus;
         }
          public float GetRange()
         {

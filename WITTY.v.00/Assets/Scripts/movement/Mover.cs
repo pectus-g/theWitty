@@ -14,7 +14,7 @@ namespace RPG.Movement
     [SerializeField] float maxSpeed = 6f;
     NavMeshAgent navMeshAgent;
     Health health;
-    void Start(){
+    void Awake(){
     navMeshAgent=GetComponent<NavMeshAgent>();
     health=GetComponent<Health>();
    }
@@ -22,6 +22,7 @@ namespace RPG.Movement
     {
      navMeshAgent.enabled=!health.IsDead();
       UpdateAnimator();
+     
        
     }
     public void StartMoveAction(Vector3 destination, float speedFraction)
@@ -39,6 +40,7 @@ namespace RPG.Movement
     }
     public void Cancel(){//player must stop near of enemy//we need this to inherit drom iaction
      navMeshAgent.isStopped=true;
+     
     }
     
     private void UpdateAnimator(){
