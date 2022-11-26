@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 using RPG.Attributes;
 
 namespace RPG.Combat
@@ -15,6 +15,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float maxLifeTime=10;//destroy projectiles after a while
     [SerializeField] GameObject[] destroyOnHit=null;
     [SerializeField] float lifeAfterImpact =2;//bunu yanar görünüm için arttır
+    [SerializeField] UnityEvent onHit;
     Health target = null;
     GameObject instigator=null;
     float damage =0;
@@ -55,7 +56,7 @@ public class Projectile : MonoBehaviour
         target.TakeDamage(instigator, damage);
 
         speed=0;
-
+        onHit.Invoke();
         if(hitEffect!=null)
         {
             Instantiate(hitEffect,GetAimLocation(),transform.rotation);

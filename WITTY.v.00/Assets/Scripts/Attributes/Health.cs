@@ -11,7 +11,7 @@ namespace RPG.Attributes
     {
         [SerializeField] float regenerationPercentage=70;// yüzde kaça gelsin can?
         [SerializeField] TakeDamageEvent takeDamage;
-
+        [SerializeField] UnityEvent onDie;
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
         {
@@ -34,13 +34,13 @@ namespace RPG.Attributes
         }
         private void OnEnable()
         {
-   GetComponent<BaseStats>().onLevelUp +=RegerateHealth;
+        GetComponent<BaseStats>().onLevelUp +=RegerateHealth;
         }
         private void OnDisable()
         {
-   GetComponent<BaseStats>().onLevelUp -=RegerateHealth;
+        GetComponent<BaseStats>().onLevelUp -=RegerateHealth;
         }
-       public bool IsDead()
+        public bool IsDead()
         {
             return isDead;
         }
@@ -52,7 +52,7 @@ namespace RPG.Attributes
             
        
             if(healthPoints.value<=0)
-            {
+            {   onDie.Invoke();
                 Die();
                 AwardExperience(instigator);
             }
