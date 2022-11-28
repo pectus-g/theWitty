@@ -1,0 +1,16 @@
+Supported Unity version 2019.4.35
+Support Universal RP version 7.7.1
+
+To use this pack with the Universal RP, please follow next steps:
+
+1. Extract the URP.unitypackage file. All the neccessary files will be updated.
+
+2. Select any object in any scene, go to the Layers dropdown and click Add Layer.
+
+3. Fill the User Layer fileds in this order: 
+User Layer 8: PostProcessing
+User Layer 9: Player
+User Layer 10: DeadZone
+User Layer 11: BrokenPieces
+
+Once you complete these simple steps, the assets and demo scenes will work as designed.
