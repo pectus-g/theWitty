@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2859484911653690440
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cliff_B_Mat
+  m_Name: Cliff_A_Mat 1
   m_Shader: {fileID: -6465566751694194690, guid: 7f57b0c643f528f4297b72348cab9faf,
     type: 3}
   m_ValidKeywords:
@@ -32,15 +45,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CoverageAlbedo:
-        m_Texture: {fileID: 2800000, guid: 6dc430d5c113ab14c91065b0117acafb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2c9a5d1ccb8feb24fabae7a84dd499cb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CoverageMap:
-        m_Texture: {fileID: 2800000, guid: f372ecf27e5c4954c8bf0015e21ca538, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0f066435241bad04b9536e3214d73f14, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CoverageNormals:
-        m_Texture: {fileID: 2800000, guid: 51954d6e0de971a43ac1ba884c6836f5, type: 3}
+        m_Texture: {fileID: 2800000, guid: f520cd20275b2ea409783c8ced5a73bc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -52,12 +65,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 1726649286, guid: 0ea7c6367f83bcc498b851eb479925fa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Detailnormal:
         m_Texture: {fileID: 2800000, guid: 06bdf21e154425948b0978955fd687b4, type: 3}
-        m_Scale: {x: 10, y: 10}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
@@ -69,18 +82,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Globalcolor:
         m_Texture: {fileID: 2800000, guid: 016e95565131cbe4bbe66d399a1c4efa, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _GrassDiffuse:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _GrassdiffuseAheight:
-        m_Texture: {fileID: -1782295886, guid: 7154642c7e2a90e42ac41a57d23f7317, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Grassnormal:
-        m_Texture: {fileID: 417745122, guid: 7154642c7e2a90e42ac41a57d23f7317, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -96,11 +97,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Objectalbedo:
-        m_Texture: {fileID: 2800000, guid: c469316b0e200614daa4511fd0e1d512, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4cc5117dfac9f974cbdb39ceb28e5059, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Objectnormals:
-        m_Texture: {fileID: 2800000, guid: 184d6a203cd3af44397cedb44de6cfed, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5d23501e26536f746ac3ce3d9a0bdb5f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Objectroughness:
@@ -119,20 +120,32 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Rockdiffuse:
-        m_Texture: {fileID: 2800000, guid: d84a0fef99ecb614e884feee98ccff2f, type: 3}
+    - _RockAlbedo:
+        m_Texture: {fileID: 2800000, guid: 4cc5117dfac9f974cbdb39ceb28e5059, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Rocknormal:
-        m_Texture: {fileID: 2800000, guid: c30b9cbff6831f14781f04ee653e852e, type: 3}
+    - _RockNormal:
+        m_Texture: {fileID: 2800000, guid: 5d23501e26536f746ac3ce3d9a0bdb5f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RockSpecular:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SnowAlbedo:
         m_Texture: {fileID: -1782295886, guid: 7154642c7e2a90e42ac41a57d23f7317, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SnowNormal:
+        m_Texture: {fileID: 2800000, guid: 84ec7eb4fd0bebc4fb72c2887112b5a2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SnowNormals:
         m_Texture: {fileID: 417745122, guid: 7154642c7e2a90e42ac41a57d23f7317, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowSpecular:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample3:
@@ -166,17 +179,14 @@ Material:
     - _BlendMode: 0
     - _BumpScale: 1
     - _ConservativeDepthOffsetEnable: 0
-    - _Contrast: 1
     - _CoverageAmount: 1
-    - _CoverageTiling: 8
+    - _CoverageTiling: 1
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
-    - _Debug: 0
     - _DepthOffsetEnable: 0
     - _DetailNormalMapScale: 0
     - _Detailstrength: 0.28
-    - _Distance: 3
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
@@ -184,16 +194,10 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _Float0: 4.78
-    - _Float4: 2
-    - _Globaltiling: 0.163
+    - _Globaltiling: 0.13
     - _GlossMapScale: 0.727
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Grassedgecontrast: 0.481
-    - _Grassheight: 1.045
-    - _Grasstiling: 0.31
-    - _Grasstransitioncontrast: 0.77
-    - _Height: 1
     - _MaskClipValue: 0.5
     - _Metallic: 0
     - _Mode: 0
@@ -208,10 +212,9 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _RockTilingNear: 0.1
-    - _RocktilingFar: 0.03
     - _Roughness: 0.276
     - _SmoothnessTextureChannel: 1
+    - _SnowAmount: 2
     - _SnowCover: 1
     - _SnowTiling: 7
     - _SpecularHighlights: 1
@@ -231,7 +234,6 @@ Material:
     - _TessMax: 25
     - _TessMin: 10
     - _TessValue: 4
-    - _TransitionExponent: 3
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
     - _TransparentDepthPostpassEnable: 0
@@ -251,13 +253,10 @@ Material:
     - _Color: {r: 0.4852941, g: 0.4852941, b: 0.4852941, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GlobalColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GrassColor: {r: 0.5909737, g: 1, b: 0.1985294, a: 1}
-    - _Grasscolor: {r: 1, g: 1, b: 1, a: 1}
-    - _ObjectColor: {r: 0.86764705, g: 0.86764705, b: 0.86764705, a: 1}
-    - _RockColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+    - _GlobalColor: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
+    - _ObjectColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &1141349272835922228
+--- !u!114 &8215533408212322261
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -273,16 +272,3 @@ MonoBehaviour:
   hdPluginSubTargetMaterialVersions:
     m_Keys: []
     m_Values: 
---- !u!114 &6833803639310664519
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5

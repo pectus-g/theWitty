@@ -2,14 +2,20 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ground_mtl
   m_Shader: {fileID: 4800000, guid: 2e62b2422c0594a45a137e771844417e, type: 3}
-  m_ShaderKeywords: _EMISSION _HEIGHTBLEND_ON _NORMALMAP _PARALLAXMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  m_ValidKeywords:
+  - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  m_InvalidKeywords:
+  - _EMISSION
+  - _HEIGHTBLEND_ON
+  - _NORMALMAP
+  - _PARALLAXMAP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -203,6 +209,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AlphaCutoff: 0.5
     - _BumpScale: 1
@@ -246,3 +253,4 @@ Material:
     - _ScaleandOffsetY01: {r: 1, g: 1, b: 0, a: 0}
     - _ScaleandOffsetY02: {r: 1, g: 1, b: 0, a: 0}
     - _ScaleandOffsetY03: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
