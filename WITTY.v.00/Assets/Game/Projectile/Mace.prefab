@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: hitEffect
       value: 
       objectReference: {fileID: 159062, guid: e4fc72c1b3da74d4697708bcd2a9db60, type: 3}
+    - target: {fileID: 7138277531803507465, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7493322079871073976, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
       propertyPath: m_Name

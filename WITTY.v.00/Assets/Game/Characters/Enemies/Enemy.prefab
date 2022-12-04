@@ -320,7 +320,7 @@ PrefabInstance:
     - target: {fileID: 169696760182501461, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 271815785567376595, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
         type: 3}
@@ -367,6 +367,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2752668099760226665, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3005614715466616283, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
         type: 3}
       propertyPath: m_IsActive
@@ -401,6 +406,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5342687660884933697, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5690197841959242218, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
         type: 3}
@@ -462,6 +472,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8158607391078144708, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8219620606276449006, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
         type: 3}
       propertyPath: m_IsActive
@@ -486,6 +501,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181722927637462456, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1736005846133969808, guid: c3d800f81d2989d4a9a9dc8bb15f52a7, type: 3}
