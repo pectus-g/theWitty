@@ -45,7 +45,37 @@ PrefabInstance:
       propertyPath: m_AngularSpeed
       value: 5000
       objectReference: {fileID: 0}
+    - target: {fileID: 119776312314838403, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 310939849556507181, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 310939849556507183, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 310939849717168537, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 310939849717168537, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 498688040618472838, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 784285249696196409, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -55,6 +85,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1205471617880971090, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_RootOrder
@@ -63,17 +98,17 @@ PrefabInstance:
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 449.99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 100.05494
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 875.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
@@ -120,6 +155,26 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5993251353864285721, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: characterClass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7964984582261585015, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091982303817129938, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730895200432381166, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
 --- !u!114 &7914355752134549640 stripped
@@ -140,32 +195,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7914355750744068659}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &-5240613632972464031
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9038656914840864097}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.97, z: 0}
---- !u!114 &3310250477988644061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9038656914840864097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b0d9ae9e78a14bb5b4d936adeace939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3941259513801205746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +213,18 @@ MonoBehaviour:
   waypointTolerance: 1
   waypointDwellTime: 2
   patrolSpeedFraction: 0.2
+--- !u!114 &6602580693642833736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9038656914840864097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0d9ae9e78a14bb5b4d936adeace939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &9038656915554745495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
@@ -356,6 +397,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MaskTint05
       objectReference: {fileID: 0}
+    - target: {fileID: 5025019268175795024, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5690197841959242218, guid: c3d800f81d2989d4a9a9dc8bb15f52a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -441,7 +487,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1736005846133969808, guid: c3d800f81d2989d4a9a9dc8bb15f52a7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c3d800f81d2989d4a9a9dc8bb15f52a7, type: 3}
 --- !u!4 &1883364366602485529 stripped
 Transform:

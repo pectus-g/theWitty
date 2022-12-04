@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: d7dd1c3f4cba1d441a7d295a168bac0d, type: 3}
   m_ValidKeywords:
   - _ADVANCED_LIGHTING
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _ENVIRONMENTREFLECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -113,12 +114,12 @@ Material:
     - _NormalSpherify: 0
     - _NormalSpherifyMask: 0
     - _OcclusionStrength: 0.695
-    - _PerspectiveCorrection: 1
+    - _PerspectiveCorrection: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Scalemap: 0
     - _ShadowBiasCorrection: 0
-    - _Smoothness: 0
+    - _Smoothness: 0.241
     - _SmoothnessTextureChannel: 0
     - _SpecularAmount: 0
     - _SpecularHighlights: 1
