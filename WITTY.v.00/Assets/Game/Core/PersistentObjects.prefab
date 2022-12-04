@@ -183,6 +183,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4646487350212108554}
     m_Modifications:
+    - target: {fileID: 4356538826965804800, guid: 855d40aaf69ec4fa28b88c81e91838cf,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4356538826965804800, guid: 855d40aaf69ec4fa28b88c81e91838cf,
+        type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4356538826965804803, guid: 855d40aaf69ec4fa28b88c81e91838cf,
         type: 3}
       propertyPath: m_Pivot.x
