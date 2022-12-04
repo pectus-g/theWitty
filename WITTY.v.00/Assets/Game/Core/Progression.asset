@@ -79,3 +79,17 @@ MonoBehaviour:
     - stat: 2
       levels:
       - 90
+  - characterClass: 2
+    stats:
+    - stat: 0
+      levels:
+      - 30
+    - stat: 1
+      levels:
+      - 25
+    - stat: 3
+      levels:
+      - 5
+    - stat: 2
+      levels:
+      - 90

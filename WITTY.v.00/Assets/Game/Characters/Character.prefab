@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 8780315740997232923}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueIdentifier: player
+  uniqueIdentifier: 
 --- !u!54 &3549123495138171334
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -617,7 +617,7 @@ PrefabInstance:
     - target: {fileID: 3268051904729844062, guid: 2779d90cbf0f6479bb5454ddb2991a07,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3268051904729844062, guid: 2779d90cbf0f6479bb5454ddb2991a07,
         type: 3}

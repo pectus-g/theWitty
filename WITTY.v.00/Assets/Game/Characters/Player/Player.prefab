@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1831285433, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: maxSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1831285434, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
       propertyPath: leftHandTransform
       value: 
@@ -15,6 +19,15 @@ PrefabInstance:
       propertyPath: rightHandTransform
       value: 
       objectReference: {fileID: 9080587094659536554}
+    - target: {fileID: 1831285438, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: m_Speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 310939849717168537, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 310939849717168537, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -23,6 +36,11 @@ PrefabInstance:
     - target: {fileID: 1205471617880971090, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205471617880971090, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
@@ -79,6 +97,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730895200432381166, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
