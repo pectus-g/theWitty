@@ -9,21 +9,24 @@ public class Fader : MonoBehaviour
     Coroutine currentActiveFade=null;
     private void Awake()
     {
-        canvasGroup =GetComponent<CanvasGroup>();
+        canvasGroup = GetComponent<CanvasGroup>();
        
     }
     public void FadeOutImmediate(){
         canvasGroup.alpha=1;
+        
     }
    
     public Coroutine FadeOut(float time)
     {
       return Fade(1,time);
+      
     }
    
     public Coroutine FadeIn(float time)
     {
       return Fade(0,time);
+     
     }
      public Coroutine Fade(float target,float time)
     {
