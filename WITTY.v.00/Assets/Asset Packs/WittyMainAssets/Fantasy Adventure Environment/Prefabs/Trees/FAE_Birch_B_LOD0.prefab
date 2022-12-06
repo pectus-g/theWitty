@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 70686817978153328}
   - component: {fileID: 62956366561455520}
   - component: {fileID: 174263018198541526}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FAE_Birch_B_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4832379723206648732}
   - component: {fileID: 4857984773766049312}
   - component: {fileID: 4850249635394374716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FAE_Spruce_C_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

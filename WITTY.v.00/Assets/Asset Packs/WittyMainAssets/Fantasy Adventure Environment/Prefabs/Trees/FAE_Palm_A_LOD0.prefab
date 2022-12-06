@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7414153141115989901}
   - component: {fileID: 7394721845228669953}
   - component: {fileID: 7402756016830410961}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FAE_Palm_A_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
