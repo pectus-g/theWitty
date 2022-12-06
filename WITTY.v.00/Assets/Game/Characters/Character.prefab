@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   maxSpeed: 6
+  maxNavPathLenght: 40
 --- !u!114 &1831285434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,7 +618,7 @@ PrefabInstance:
     - target: {fileID: 3268051904729844062, guid: 2779d90cbf0f6479bb5454ddb2991a07,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3268051904729844062, guid: 2779d90cbf0f6479bb5454ddb2991a07,
         type: 3}
