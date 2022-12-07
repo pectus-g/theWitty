@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9028916434670164820}
   - component: {fileID: 9022450581324013434}
   - component: {fileID: 9012446357181344568}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FAE_Tree_A_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

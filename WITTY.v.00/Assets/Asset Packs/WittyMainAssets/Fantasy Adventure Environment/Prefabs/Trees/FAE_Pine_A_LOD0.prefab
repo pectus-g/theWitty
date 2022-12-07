@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7239427248782156326}
   - component: {fileID: 7209299906446011074}
   - component: {fileID: 7217052644125140208}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FAE_Pine_A_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
