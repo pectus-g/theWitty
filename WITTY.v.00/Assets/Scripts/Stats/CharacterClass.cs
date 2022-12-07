@@ -6,7 +6,9 @@ namespace RPG.Stats
         Player,
         Grunt,
         Mage,
-        Archer
+        Archer,
+        Bomber,
+        FireMan
         //karakter eklerken buraya geri dön ve düzenle. Eklemek istediğin her özel karakteri buraya eklemelisin.
     }
 }

@@ -6,7 +6,7 @@ public class CameraRotate : MonoBehaviour
     public float Speed = 5;
     
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
         if(Input.GetMouseButton(1))
