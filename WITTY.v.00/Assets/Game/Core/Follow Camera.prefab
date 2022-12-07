@@ -120,6 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 325543643215554027}
   - component: {fileID: 325543643215554026}
+  - component: {fileID: 2555654503164397981}
   m_Layer: 0
   m_Name: Follow Camera
   m_TagString: Untagged
@@ -169,3 +170,15 @@ MonoBehaviour:
     FarClipPlane: 5000
     Dutch: 0
   m_ComponentOwner: {fileID: 325543643092404281}
+--- !u!114 &2555654503164397981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325543643215554028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9310558d9dbe24d139840a02f3e95e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
