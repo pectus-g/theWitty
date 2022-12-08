@@ -186,6 +186,26 @@ PrefabInstance:
       propertyPath: destroyOnHit.Array.data[0]
       value: 
       objectReference: {fileID: 416011080949970911}
+    - target: {fileID: 5083994623857820524, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083994623857820524, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083994623857820524, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083994623857820524, guid: eaa3b846536c24e18b9d4c2e59931366,
+        type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7138277531803507465, guid: eaa3b846536c24e18b9d4c2e59931366,
         type: 3}
       propertyPath: m_IsActive
