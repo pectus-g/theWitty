@@ -12,13 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046c1b9bba8104ee388b21d3ea8919b6, type: 3}
   m_Name: Bomb
   m_EditorClassIdentifier: 
-  itemID: 5ed4e8bf-2bc7-4677-81d9-ad9e2d43d6a3
-  displayName: Bomb
-  description: 
-  icon: {fileID: 21300000, guid: f95f697d66d238446b1ab717def09945, type: 3}
-  pickup: {fileID: 4483917897118013949, guid: 4bfa3c72636fd4ca9a949f37e4fd5b7a, type: 3}
-  stackable: 0
-  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: 487ee1dbc2b45449e92f20539444c0b5, type: 2}
   equippedPrefab: {fileID: 0}
   weaponDamage: 10

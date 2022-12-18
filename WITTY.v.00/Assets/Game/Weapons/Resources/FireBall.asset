@@ -12,13 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046c1b9bba8104ee388b21d3ea8919b6, type: 3}
   m_Name: FireBall
   m_EditorClassIdentifier: 
-  itemID: 0a3a6345-4e23-464e-90ce-eff8584a24f4
-  displayName: FireBall
-  description: 
-  icon: {fileID: 21300000, guid: 3042b019b052942a1baf7aa49d7ca6bb, type: 3}
-  pickup: {fileID: 5680574707434951671, guid: 0a228cf435380497795c4879a4e4cfd5, type: 3}
-  stackable: 0
-  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: bfede5e77578440189afc49bf41bd262, type: 2}
   equippedPrefab: {fileID: 0}
   weaponDamage: 7
