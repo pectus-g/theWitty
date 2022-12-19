@@ -5,7 +5,8 @@ using RPG.Combat;
 using RPG.Core;
 using RPG.Attributes;
 using RPG.Movement;
-using RPG.Utils;
+//using RPG.Utils;
+using GameDevTV.Utils;
 namespace RPG.Control
 {
     public class AIController : MonoBehaviour

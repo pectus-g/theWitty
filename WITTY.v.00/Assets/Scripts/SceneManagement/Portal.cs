@@ -15,7 +15,7 @@ namespace RPG.SceneManagement
     [SerializeField] int sceneToLoad=-1;
     [SerializeField] Transform spawnPoint;
     [SerializeField] DestinationIdentifier destination;
-    [SerializeField] float fadeOutTime=1f;
+    [SerializeField] float fadeOutTime=.5f;
     [SerializeField] float fadeInTime=2f;
     [SerializeField] float fadeWaitTime=0.5f;
 
@@ -39,8 +39,6 @@ namespace RPG.SceneManagement
     DontDestroyOnLoad(gameObject);
 
    Fader fader = FindObjectOfType<Fader>();
-
-   
 
     //save current level
     SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
@@ -70,15 +68,14 @@ namespace RPG.SceneManagement
     Destroy(gameObject);
   }
   private void UpdatePlayer(Portal otherPortal)
-  {
-    GameObject player = GameObject.FindWithTag("Player");
-   // player.GetComponent<NavMeshAgent>().Warp(otherPortal.spawnPoint.position);
-   player.GetComponent<NavMeshAgent>().enabled =false;
-    player.transform.position =otherPortal.spawnPoint.position;
-    player.transform.rotation =otherPortal.spawnPoint.rotation;
-       player.GetComponent<NavMeshAgent>().enabled =true;
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            player.GetComponent<NavMeshAgent>().enabled = false;
+            player.transform.position = otherPortal.spawnPoint.position;
+            player.transform.rotation = otherPortal.spawnPoint.rotation;
+            player.GetComponent<NavMeshAgent>().enabled = true;
+        }
 
-  }
   private Portal GetOtherPortal()
   {
     foreach (Portal portal in FindObjectsOfType<Portal>())
