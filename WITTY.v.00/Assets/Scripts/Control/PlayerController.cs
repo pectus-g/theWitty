@@ -28,6 +28,7 @@ namespace RPG.Control
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
         [SerializeField] float raycastRadius =1f;
        
+       bool isDraggingUI=false;
         //haritada ne kadar uzağa gidebileceğinin değeri
 
     private void Awake()
@@ -51,11 +52,20 @@ namespace RPG.Control
     
     private bool InteractWithUI()
     {
+        if(Input.GetMouseButtonUp(0))
+        {
+            isDraggingUI=false;
+        }
         if( EventSystem.current.IsPointerOverGameObject())
         {
+            if(Input.GetMouseButtonDown(0))
+            {
+                isDraggingUI=true;
+            }
             SetCursor(CursorType.UI);
             return true; 
         }
+        if(isDraggingUI){return true;}
         return false;
     }
     private bool InteractWithComponent()
