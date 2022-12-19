@@ -154,14 +154,16 @@ namespace RPG.Combat
 
         private void UpdateWeapon()
         {
-            var weapon =equipment.GetItemSlot(EquipLocation.Weapon) as WeaponConfig;
+            var weapon =equipment.GetItemInSlot(EquipLocation.Weapon) as WeaponConfig;
             if(weapon==null)
             {
                 EquipWeapon(defaultWeapon);
 
             }
             else
-            {}
+            {
+                EquipWeapon(weapon);
+            }
         }
         private Weapon AttachWeapon(WeaponConfig weapon)
         {
