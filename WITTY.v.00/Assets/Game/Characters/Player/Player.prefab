@@ -27,6 +27,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 310939849556507182, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: vectorRT
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 310939849717168537, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -115,6 +120,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 517665420951619390}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &518226140665884378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699457920981225580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19ff972ec6859b48870488d7b1e81b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1823520504792062010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 16
---- !u!114 &1538694935901284493
+--- !u!114 &6490931118155888921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,19 +184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1699457920981225580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b11801ca435999e4e96afb1bcc282d56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &518226140665884378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699457920981225580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a19ff972ec6859b48870488d7b1e81b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 148e620455acb4d73bfec82bdf9fb2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1699457921860774298 stripped
