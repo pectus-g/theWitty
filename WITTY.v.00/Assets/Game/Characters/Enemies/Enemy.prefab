@@ -38,12 +38,32 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8419982931782987181}
+    - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RandomDrop
       objectReference: {fileID: 0}
     - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -58,8 +78,16 @@ PrefabInstance:
       value: Aggrevate
       objectReference: {fileID: 0}
     - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: RPG.Inventories.RandomDropper, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: RPG.Control.AIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1831285435, guid: 27df493104db2484fa45c9d047cc4243, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -237,10 +265,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseDistance: 5
   suspicionTime: 5
+  agroCooldownTime: 5
   patrolPath: {fileID: 0}
   waypointTolerance: 1
   waypointDwellTime: 2
   patrolSpeedFraction: 0.2
+  shoutDistance: 5
 --- !u!114 &6602580693642833736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +283,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0d9ae9e78a14bb5b4d936adeace939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8419982931782987181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9038656914840864097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815cf13aa9dfd40b68772183b5a1381c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 1
+  dropLibrary:
+  - {fileID: 11400000, guid: ef805b47c2066463189aef0657e41df4, type: 2}
+  - {fileID: 11400000, guid: e388043fce08d4d988af3f61c5684064, type: 2}
+  - {fileID: 11400000, guid: 8b42d37fe4244427da434b54e99d51d5, type: 2}
+  - {fileID: 11400000, guid: 8e0bc3852b26f481bb506a52b1e7ce62, type: 2}
+  numberOfDrops: 2
 --- !u!4 &9038656915554745495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
