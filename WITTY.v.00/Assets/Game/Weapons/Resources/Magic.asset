@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046c1b9bba8104ee388b21d3ea8919b6, type: 3}
   m_Name: Magic
   m_EditorClassIdentifier: 
+  itemID: 33109eee-2200-4850-913a-a347f54667bb
+  displayName: Magic
+  description: 
+  icon: {fileID: 21300000, guid: f1dd815974b2d4240a6bc912d6585497, type: 3}
+  pickup: {fileID: 4822752865970806228, guid: bf1bd9f44c3854b4895f7915f3110306, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: b61eba8fae1be402ca98aef46447cf3e, type: 2}
   equippedPrefab: {fileID: 0}
   weaponDamage: 7
