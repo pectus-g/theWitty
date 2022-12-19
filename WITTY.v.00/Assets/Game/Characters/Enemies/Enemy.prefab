@@ -296,12 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scatterDistance: 1
-  dropLibrary:
-  - {fileID: 11400000, guid: ef805b47c2066463189aef0657e41df4, type: 2}
-  - {fileID: 11400000, guid: e388043fce08d4d988af3f61c5684064, type: 2}
-  - {fileID: 11400000, guid: 8b42d37fe4244427da434b54e99d51d5, type: 2}
-  - {fileID: 11400000, guid: 8e0bc3852b26f481bb506a52b1e7ce62, type: 2}
-  numberOfDrops: 2
+  dropLibrary: {fileID: 11400000, guid: a95ee0547fa3a4d8cba3904b93621ecf, type: 2}
 --- !u!4 &9038656915554745495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
