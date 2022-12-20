@@ -39,7 +39,7 @@ const string defaultSaveFile = "save";
     }
     public void Load()
     {
-        StartCoroutine(GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile));
+        GetComponent<SavingSystem>().Load(defaultSaveFile);
     }
      public void Save()
     {
