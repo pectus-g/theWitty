@@ -21,5 +21,9 @@ public class Dialogue : ScriptableObject {
     {
         return nodes;
     } 
+    public DialogueNode GetRootNode()
+    {
+        return nodes[0];
+    }
 }
 }
