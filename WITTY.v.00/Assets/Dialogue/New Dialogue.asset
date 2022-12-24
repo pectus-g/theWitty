@@ -14,49 +14,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - uniqueID: a
-    text: dsdsd
+    text: hello
     children:
     - b
     - c
-    position:
+    rect:
       serializedVersion: 2
-      x: 30
-      y: 30
-      width: 400
-      height: 100
+      x: 57
+      y: 84
+      width: 200
+      height: 300
   - uniqueID: b
-    text: "dl\u015Fsldsad"
+    text: hello beack
     children: []
-    position:
+    rect:
       serializedVersion: 2
-      x: 30
-      y: 200
+      x: 327
+      y: 118
       width: 200
       height: 100
   - uniqueID: c
     text: go away!
     children: []
-    position:
+    rect:
       serializedVersion: 2
-      x: 30
-      y: 300
+      x: 315
+      y: 265
       width: 200
       height: 100
   - uniqueID: 
     text: 
     children: []
-    position:
+    rect:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
+      x: 747
+      y: 254
+      width: 200
+      height: 100
   - uniqueID: 
     text: 
     children: []
-    position:
+    rect:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
+      x: 749
+      y: 131
+      width: 200
+      height: 100
