@@ -1,24 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace RPG.Dialogue
 {
     [CreateAssetMenu(fileName = "New Dialogue", menuName = "Dialogue", order = 0)]
 public class Dialogue : ScriptableObject {
     [SerializeField]
-    List <DialogueNode> nodes;//adding node to the list easier than the array 
+      List<DialogueNode> nodes = new List<DialogueNode>();//adding node to the list easier than the array 
 
     Dictionary<string, DialogueNode> nodeLookup=new Dictionary<string, DialogueNode>();
 
-#if UNITY_EDITOR //everything is in here will only be included when we're running in the editor
-    private void Awake() {
-        if(nodes.Count ==0)
-        {
-            nodes.Add(new DialogueNode());
+ //everything is in here will only be included when we're running in the editor
+#if UNITY_EDITOR
+        private void Awake() {
+            if (nodes.Count == 0)
+            {
+                DialogueNode rootNode = new DialogueNode();
+                rootNode.uniqueID = Guid.NewGuid().ToString();
+                nodes.Add(rootNode);
+                //buildde çalışmazsa buradan onvalidate call
+            }
         }
-        OnValidate();
-    }
 #endif
    private void OnValidate() {
         nodeLookup.Clear();
@@ -49,5 +53,27 @@ public class Dialogue : ScriptableObject {
         }
         //return result;
     }
+public void CreateNode(DialogueNode parent)
+        {
+            DialogueNode newNode = new DialogueNode();
+            newNode.uniqueID = Guid.NewGuid().ToString();
+            parent.children.Add(newNode.uniqueID);
+            nodes.Add(newNode);
+            OnValidate();
+        }
+           public void DeleteNode(DialogueNode nodeToDelete)
+        {
+            nodes.Remove(nodeToDelete);
+            OnValidate();
+            CleanDanglingChildren(nodeToDelete);
+        }
+
+        private void CleanDanglingChildren(DialogueNode nodeToDelete)
+        {
+            foreach (DialogueNode node in GetAllNodes())
+            {
+                node.children.Remove(nodeToDelete.uniqueID);
+            }
+        }
 }
 }
