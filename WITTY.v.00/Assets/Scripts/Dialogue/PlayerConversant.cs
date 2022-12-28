@@ -20,6 +20,11 @@ public class PlayerConversant : MonoBehaviour
         }
         return currentNode.GetText();
     }
+    public IEnumerable<string> GetChoices()
+    {
+        yield return "Hello";
+         yield return "I remember you!";
+    }
     public void Next()
     {
         DialogueNode[] children=currentDialogue.GetAllChildren(currentNode).ToArray();
