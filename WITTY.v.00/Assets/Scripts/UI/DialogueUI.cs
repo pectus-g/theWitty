@@ -12,36 +12,66 @@ namespace RPG.UI
     PlayerConversant playerConversant;
     [SerializeField] TextMeshProUGUI AITxet;
     [SerializeField] Button nextButton;
+    [SerializeField] GameObject AIResponse;
     [SerializeField] Transform choiceRoot;
     [SerializeField] GameObject choicePrefab;
+    [SerializeField] Button quitButton;
     void Start()
     {
         playerConversant=GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
-        nextButton.onClick.AddListener(Next);//onclick is unity event. Unity events needs to Addlistener
+        playerConversant.onConversationUpdated+=UpdateUI;
+        nextButton.onClick.AddListener(() => playerConversant.Next());//onclick is unity event. Unity events needs to Addlistener
+        quitButton.onClick.AddListener(() => playerConversant.Quit());
        UpdateUI();
     }
 void Next()
 {
 playerConversant.Next();
-UpdateUI();
+
 }
    
     void UpdateUI()
     {
-         AITxet.text=playerConversant.GetText();
+        gameObject.SetActive(playerConversant.IsActive());
+         if(!playerConversant.IsActive())
+         {
+            return;
+         }
+         AIResponse.SetActive(!playerConversant.IsChoosing());
+         choiceRoot.gameObject.SetActive(playerConversant.IsChoosing());
+         if(playerConversant.IsChoosing())
+            { //choiceRoot.DetachChildren yerine 
+                BuildChoiceList();
+            }
+            else
+         {
+            AITxet.text=playerConversant.GetText();
          nextButton.gameObject.SetActive(playerConversant.HasNext());
-         //choiceRoot.DetachChildren yerine 
-         foreach (Transform item in choiceRoot)
-         {
-            Destroy(item.gameObject);
          }
-         foreach (string choiceText in playerConversant.GetChoices())
-         {
-            GameObject choiceInstance=Instantiate(choicePrefab,choiceRoot);
-            var textComp=choiceInstance.GetComponentInChildren<TextMeshProUGUI>();
-            textComp.text=choiceText;
-         }
+        
+        
     }
-}
+
+        private void BuildChoiceList()
+        {
+            foreach (Transform item in choiceRoot)
+            {
+                Destroy(item.gameObject);
+            }
+            foreach (DialogueNode choice in playerConversant.GetChoices())
+            {
+                GameObject choiceInstance = Instantiate(choicePrefab, choiceRoot);
+                var textComp = choiceInstance.GetComponentInChildren<TextMeshProUGUI>();
+                textComp.text = choice.GetText();
+                Button button=choiceInstance.GetComponentInChildren<Button>();
+                button.onClick.AddListener(() => 
+                {
+                    playerConversant.SelectChoice(choice);//each time we go through this loop, it's adding a listener to a different buton and each listener is a different dunction that is being constructed on the spot in that foreach loop.
+
+                   
+                });
+            }
+        }
+    }
 }
 

@@ -885,9 +885,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AITxet: {fileID: 3917034531620817407}
   nextButton: {fileID: 7456823654696238911}
+  AIResponse: {fileID: 449992561230943612}
   choiceRoot: {fileID: 2975146923576094909}
   choicePrefab: {fileID: 8905080580055389744, guid: c9ca64e92af004f2f8224920d6f3da46,
     type: 3}
+  quitButton: {fileID: 1291015625644175985}
 --- !u!1 &7839555702223872960
 GameObject:
   m_ObjectHideFlags: 0
