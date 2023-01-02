@@ -18,10 +18,12 @@ MonoBehaviour:
   - 7564c255-c881-4e7f-adba-ae0d38699979
   rect:
     serializedVersion: 2
-    x: 472
+    x: 473
     y: 137
     width: 200
     height: 100
+  onEnterAction: TestSelection
+  onExitAction: 
 --- !u!114 &-5586060419540386321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,6 +47,8 @@ MonoBehaviour:
     y: 223
     width: 200
     height: 100
+  onEnterAction: TestRootEntry
+  onExitAction: 
 --- !u!114 &-3260250138748753442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,6 +71,8 @@ MonoBehaviour:
     y: 242
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &-2157311335186429517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +94,8 @@ MonoBehaviour:
     y: 158
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: Attack
 --- !u!114 &-1243937109246265463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +118,8 @@ MonoBehaviour:
     y: 436
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &-860395704021984133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +141,8 @@ MonoBehaviour:
     y: 345
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +191,8 @@ MonoBehaviour:
     y: 323
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &441059118201128529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +215,8 @@ MonoBehaviour:
     y: 361
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &2508409354511226490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +238,8 @@ MonoBehaviour:
     y: 318
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &2790829736384456662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +262,8 @@ MonoBehaviour:
     y: 154
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &5393289466393314660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,3 +288,5 @@ MonoBehaviour:
     y: 164
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: TEst Ai exit action

@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50cc5adc468294014b7b3834012ea128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testDialogue: {fileID: 11400000, guid: 5ecd805ef583c477c809d5d60558660b, type: 2}
+  playerName: Witty
 --- !u!114 &4217278951911680535
 MonoBehaviour:
   m_ObjectHideFlags: 0
