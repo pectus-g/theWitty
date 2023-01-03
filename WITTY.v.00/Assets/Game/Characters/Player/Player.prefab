@@ -134,7 +134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statuses:
   - quest: {fileID: 11400000, guid: 53ae1fedc8c184895a4c02db0a82341c, type: 2}
-    completedObjectives: []
+    completedObjectives:
+    - a
+    - b
   - quest: {fileID: 11400000, guid: cf251d620b04941708cc86d32d7007ff, type: 2}
     completedObjectives: []
 --- !u!114 &518226140665884378
@@ -221,19 +223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148e620455acb4d73bfec82bdf9fb2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8784229994177162135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699457920981225580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19fc28a888c18ce4a82d521912c49df1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventorySize: 16
 --- !u!114 &6977935220367781033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,6 +244,19 @@ MonoBehaviour:
     completedObjectives:
     - sd
     - sda
+--- !u!114 &8784229994177162135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699457920981225580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fc28a888c18ce4a82d521912c49df1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 16
 --- !u!4 &1699457921860774298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,

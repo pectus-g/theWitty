@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1792
     height: 1092
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 75
+  controlID: 19
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 76
+  controlID: 20
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,8 +219,8 @@ MonoBehaviour:
     y: 0
     width: 392
     height: 628
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -443,21 +443,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 50a2ffff
       m_LastClickedID: -23984
-      m_ExpandedIDs: b82bdbffc012f3ff425ff8ff662cfeff702cfeffb0d4feff4e9effff50a2ffff5ea2ffff1afbffff
+      m_ExpandedIDs: 5ea2ffff1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Player
-        m_OriginalName: Player
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 2787668
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -728,7 +728,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -62.288673, y: 2.035826, z: -341.129}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -62.288673, y: 2.035826, z: -341.129}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -777,15 +777,15 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.32416183, y: 0.18481015, z: -0.0647302, w: -0.9255128}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.3241619, y: 0.18481018, z: -0.06473021, w: -0.92551297}
   m_Size:
     m_Target: 4.100015
     speed: 2
-    m_Value: 10
+    m_Value: 4.100015
   m_Ortho:
     m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 0.22191514
     m_SpeedNormalized: 0.10649002
@@ -871,7 +871,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 1742.6283
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -977,22 +977,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game/UI/Quests
+    - Assets/Game/Quests
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Game/UI/Quests
+  - Assets/Game/Quests
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/asenahazalkahriman/Documents/GitHub/theWitty/WITTY.v.00
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 74820100
-    m_LastClickedID: 98932
-    m_ExpandedIDs: 000000009e100100a0100100a6100100a8100100aa100100ac100100ae100100b0100100b2100100b4100100b6100100b8100100ba100100bc100100be100100c0100100c2100100c4100100c6100100c8100100ca100100cc100100ce100100d0100100d2100100d4100100d6100100d8100100da100100dc100100de100100e0100100e2100100e4100100e6100100e8100100ea100100ec100100ee100100f0100100f2100100f4100100f6100100f8100100fa100100fc100100fe10010000110100021101000411010006110100081101000a1101000c1101000e1101001011010012110100161101001a1101001c1101001e1101002011010026110100281101002a1101002e110100cc120100d012010000ca9a3bffffff7f
+    m_SelectedIDs: 02140100
+    m_LastClickedID: 70658
+    m_ExpandedIDs: 000000004c1301004e13010050130100521301005413010056130100581301005a1301005c1301005e13010060130100621301006413010066130100681301006a1301006c1301006e13010070130100721301007413010076130100781301007a1301007c1301007e13010080130100821301008413010086130100881301008a1301008c1301008e13010090130100921301009413010096130100981301009a1301009c1301009e130100a0130100a2130100a4130100a6130100a8130100aa130100ac130100ae130100b0130100b2130100b4130100b6130100b8130100ba130100bc130100be130100c0130100c2130100c4130100c6130100c8130100ca130100cc130100ce130100d01301000414010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1020,7 +1020,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009e100100a0100100a2100100a4100100a6100100a8100100aa100100ac100100ae100100b0100100b2100100b4100100b6100100b8100100ba100100bc100100be100100c0100100c2100100c4100100c6100100c8100100ca100100cc100100ce100100d0100100d2100100d4100100d6100100d8100100da100100dc100100de100100e0100100e2100100e4100100e6100100e8100100ea100100ec100100ee100100f0100100f2100100f4100100f6100100f8100100fa100100fc100100fe10010000110100021101000411010006110100081101000a1101000c1101000e11010010110100121101001411010016110100181101001a1101001c1101001e11010020110100221101002411010026110100281101002a1101002c1101002e110100
+    m_ExpandedIDs: 000000004c1301004e13010050130100521301005413010056130100581301005a1301005c1301005e13010060130100621301006413010066130100681301006a1301006c1301006e13010070130100721301007413010076130100781301007a1301007c1301007e13010080130100821301008413010086130100881301008a1301008c1301008e13010090130100921301009413010096130100981301009a1301009c1301009e130100a0130100a2130100a4130100a6130100a8130100aa130100ac130100ae130100b0130100b2130100b4130100b6130100b8130100ba130100bc130100be130100c0130100c2130100c4130100c6130100c8130100ca130100cc130100ce130100d0130100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1051,18 +1051,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000848b00007e8500008ce00000549d0000f61e01006c9000005e8d0000868e0000ea850000c6b900004cb500003ca5000024a00000bea30000a6a30000a6ae00000ec600007c030100e6040100a29d00000c75020054b60000282d04005cee00002a16020064490100a8540100f4520100fc520100bc9e00002eb800003009010084b7000082b700001684000040a40000d4cc0000bab601009ecc000018cc0000ba85000024f3020072f202002a04020022610200bce70000022f0100b6160100dc3b02002c3c0200165e02004ca702006c5e020080720200faf400000e5c05000000000090e6150052aefeffaaa9feff88a1feff027a01009867fefffa5dfeff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Quest Tooltip
-      m_OriginalName: Quest Tooltip
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 681842
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:

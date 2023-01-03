@@ -13,14 +13,18 @@ MonoBehaviour:
   m_Name: 4fa06853-713a-4981-9180-4adb8580481e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
-  children: []
+  text: Hello, can you help to my mom?
+  children:
+  - 84c2d861-bf6a-4552-84ef-ad3075816505
+  - fc78e91e-0d28-4029-add5-f92bbeae3a8c
   rect:
     serializedVersion: 2
     x: 181
     y: 137
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,4 +39,77 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -2247247746108923429}
+  - {fileID: 4527743085774663845}
+  - {fileID: 5009857217029539062}
+  - {fileID: 8374013108282835508}
   newNodeOffset: {x: 250, y: 0}
+--- !u!114 &4527743085774663845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac294d3223264c31a1acb6134c80440, type: 3}
+  m_Name: 84c2d861-bf6a-4552-84ef-ad3075816505
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sure For what!
+  children:
+  - 7eb0e484-f795-4da7-aef7-ea93e8975dba
+  rect:
+    serializedVersion: 2
+    x: 547
+    y: 61
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &5009857217029539062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac294d3223264c31a1acb6134c80440, type: 3}
+  m_Name: fc78e91e-0d28-4029-add5-f92bbeae3a8c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No, i am ot able to help anyone but me.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 521
+    y: 174
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &8374013108282835508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac294d3223264c31a1acb6134c80440, type: 3}
+  m_Name: 7eb0e484-f795-4da7-aef7-ea93e8975dba
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Can you find some footcreeam?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 794
+    y: 63
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest
