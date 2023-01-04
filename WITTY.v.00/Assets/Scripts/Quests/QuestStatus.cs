@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace RPG.Quests
 {
@@ -27,6 +28,12 @@ namespace RPG.Quests
             return completedObjectives.Contains(objective);
         }
         
-
+ public void CompleteObjective(string objective)
+        {
+            if (quest.HasObjective(objective))
+            {
+                completedObjectives.Add(objective);
+            }
+        }
 }
 }
