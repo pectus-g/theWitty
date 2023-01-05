@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 1039007f-d70e-4a5b-99d2-60aa60370c20
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: its me
+  text: go away
   children:
   - 7564c255-c881-4e7f-adba-ae0d38699979
   rect:
     serializedVersion: 2
     x: 473
-    y: 137
+    y: 159
     width: 200
     height: 100
   onEnterAction: TestSelection
@@ -62,13 +62,13 @@ MonoBehaviour:
   m_Name: 6075520c-28bc-42cb-b6ce-cc34c31a6e4e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: test1 ex2
+  text: Sorry , i am very stressedi need a pair of socks
   children:
   - 7bd9a7fd-87d2-43cf-a6d7-6d7947b436d3
   rect:
     serializedVersion: 2
-    x: 1193
-    y: 242
+    x: 1194
+    y: 243
     width: 200
     height: 100
   onEnterAction: 
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Name: a2588e6a-e432-41bf-9042-412b95b8b96c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: liar
+  text: fukyu
   children: []
   rect:
     serializedVersion: 2
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 8836e6d0-ab67-42ad-b799-a65e5e7ee8ca
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: deneme
+  text: a mother needs that
   children:
   - 7bd9a7fd-87d2-43cf-a6d7-6d7947b436d3
   rect:
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 0a328ffe-208f-4303-8854-d0d4bc0e6033
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: tesx
+  text: for myself
   children: []
   rect:
     serializedVersion: 2
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Name: 00d4ecce-5e6b-4c99-9252-16a317a8deee
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: test2
+  text: why?
   children:
   - 0a328ffe-208f-4303-8854-d0d4bc0e6033
   - 8836e6d0-ab67-42ad-b799-a65e5e7ee8ca
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Name: 7dec7469-43d2-4679-b49c-f19cd57b0074
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: hello back
+  text: do you see a sock here
   children:
   - 00d4ecce-5e6b-4c99-9252-16a317a8deee
   rect:
@@ -230,16 +230,16 @@ MonoBehaviour:
   m_Name: 7bd9a7fd-87d2-43cf-a6d7-6d7947b436d3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: end
+  text: here i have the left one
   children: []
   rect:
     serializedVersion: 2
-    x: 1461
-    y: 318
+    x: 1518
+    y: 311
     width: 200
     height: 100
   onEnterAction: 
-  onExitAction: 
+  onExitAction: TestObjective
 --- !u!114 &2790829736384456662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: d18589be-6ca1-4fb1-ac02-c09ef6676067
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: test1 ex
+  text: it is you
   children:
   - a2588e6a-e432-41bf-9042-412b95b8b96c
   rect:
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Name: 7564c255-c881-4e7f-adba-ae0d38699979
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: test1
+  text: what is your problem
   children:
   - d18589be-6ca1-4fb1-ac02-c09ef6676067
   - 6075520c-28bc-42cb-b6ce-cc34c31a6e4e
