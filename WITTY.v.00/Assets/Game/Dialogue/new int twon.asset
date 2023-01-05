@@ -67,8 +67,8 @@ MonoBehaviour:
   - 7bd9a7fd-87d2-43cf-a6d7-6d7947b436d3
   rect:
     serializedVersion: 2
-    x: 1194
-    y: 243
+    x: 1175
+    y: 249
     width: 200
     height: 100
   onEnterAction: 
@@ -134,7 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: for myself
-  children: []
+  children:
+  - 7bd9a7fd-87d2-43cf-a6d7-6d7947b436d3
   rect:
     serializedVersion: 2
     x: 1180
