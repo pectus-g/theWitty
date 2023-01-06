@@ -1,5 +1,45 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9132045320240326674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac294d3223264c31a1acb6134c80440, type: 3}
+  m_Name: 2c3e33a9-200f-48e9-9e87-1fcba7dc38e8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I have a pair of socks.
+  children:
+  - 0025370d-943a-4f72-b2d7-29766355a3d9
+  rect:
+    serializedVersion: 2
+    x: 524
+    y: 430
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Fin My socks
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Fin My socks
+        negate: 0
+      - predicate: HasInventoryItem
+        parameters:
+        - 034c3028-ae60-49c1-adbe-59f4c822754b
+        negate: 0
 --- !u!114 &-7638776506330937357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24,8 +64,32 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
+--- !u!114 &-5633496048571726986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac294d3223264c31a1acb6134c80440, type: 3}
+  m_Name: 0025370d-943a-4f72-b2d7-29766355a3d9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: That's amazing thank you!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 774
+    y: 430
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-2247247746108923429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,6 +108,7 @@ MonoBehaviour:
   - 84c2d861-bf6a-4552-84ef-ad3075816505
   - fc78e91e-0d28-4029-add5-f92bbeae3a8c
   - 65644496-81a4-4334-9fce-b29fde0cd8b7
+  - 2c3e33a9-200f-48e9-9e87-1fcba7dc38e8
   rect:
     serializedVersion: 2
     x: 181
@@ -53,8 +118,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &-877214847401911999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,9 +144,17 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: HasQuest
-    parameters:
-    - Fin My socks
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Fin My socks
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Fin My socks
+        negate: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +174,8 @@ MonoBehaviour:
   - {fileID: 8374013108282835508}
   - {fileID: -877214847401911999}
   - {fileID: -7638776506330937357}
+  - {fileID: -9132045320240326674}
+  - {fileID: -5633496048571726986}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &4527743085774663845
 MonoBehaviour:
@@ -121,15 +195,19 @@ MonoBehaviour:
   - 7eb0e484-f795-4da7-aef7-ea93e8975dba
   rect:
     serializedVersion: 2
-    x: 547
-    y: 61
+    x: 548
+    y: 62
     width: 200
     height: 100
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Fin My socks
+        negate: 1
 --- !u!114 &5009857217029539062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,8 +232,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    and: []
 --- !u!114 &8374013108282835508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,5 +257,4 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: GiveQuest
   condition:
-    predicate: 
-    parameters: []
+    and: []

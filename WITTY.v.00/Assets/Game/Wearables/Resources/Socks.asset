@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Socks
   m_EditorClassIdentifier: 
   itemID: 034c3028-ae60-49c1-adbe-59f4c822754b
-  displayName: 
-  description: 
-  icon: {fileID: 0}
-  pickup: {fileID: 0}
+  displayName: Sock
+  description: A pair of socks
+  icon: {fileID: 21300000, guid: 53f59e0f1e337114a9de3d4cdfae9210, type: 3}
+  pickup: {fileID: 4187683978154460513, guid: 5ae963157941b443e8d048d6e9ded150, type: 3}
   stackable: 0
-  allowedEquipLocation: 5
+  allowedEquipLocation: 4
   additiveModifiers: []
   percentageModifiers: []
