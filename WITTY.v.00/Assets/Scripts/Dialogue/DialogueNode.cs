@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using RPG.Core;
 
 namespace RPG.Dialogue
 {
@@ -20,6 +21,8 @@ public class DialogueNode : ScriptableObject
         string onEnterAction;
         [SerializeField]
         string onExitAction;
+        [SerializeField]
+        Condition condition;
 
 
         public Rect GetRect()
@@ -49,6 +52,11 @@ public class DialogueNode : ScriptableObject
         {
             return onExitAction;
         }
+          public bool CheckCondition(IEnumerable<IPredicateEvaluator> evaluators)
+        {
+            return condition.Check(evaluators);
+        }
+
 #if UNITY_EDITOR
         public void SetPosition(Vector2 newPosition)
         {
