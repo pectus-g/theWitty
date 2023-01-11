@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using RPG.Quests;
 using TMPro;
 using System;
-using System.Collections;
 using UnityEngine;
 
 namespace RPG.UI.Quests
