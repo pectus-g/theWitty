@@ -15,8 +15,6 @@ MonoBehaviour:
   objectives:
   - reference: 1
     description: Find the Left Sock.
-  - reference: 2
-    description: Find the right Sock.
   rewards:
   - number: 3
     item: {fileID: 11400000, guid: 8b42d37fe4244427da434b54e99d51d5, type: 2}
