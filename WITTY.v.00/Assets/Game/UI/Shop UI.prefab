@@ -306,6 +306,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3100813327070500854, guid: 66adfe69979ad4526b49d2624ceb933b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4955368067384044873, guid: 66adfe69979ad4526b49d2624ceb933b,
         type: 3}
       propertyPath: m_Name
@@ -513,7 +518,7 @@ PrefabInstance:
     - target: {fileID: 3080167724038507932, guid: 89cdb9ebd64484e6c9bf3597ced75c6a,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -145.69
+      value: -194.1875
       objectReference: {fileID: 0}
     - target: {fileID: 3080167724038507932, guid: 89cdb9ebd64484e6c9bf3597ced75c6a,
         type: 3}
@@ -558,7 +563,7 @@ PrefabInstance:
     - target: {fileID: 3080167724038507932, guid: 89cdb9ebd64484e6c9bf3597ced75c6a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 20.322998
+      value: -3.90625
       objectReference: {fileID: 0}
     - target: {fileID: 3080167724038507932, guid: 89cdb9ebd64484e6c9bf3597ced75c6a,
         type: 3}
@@ -1766,6 +1771,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3100813327070500854, guid: 66adfe69979ad4526b49d2624ceb933b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4955368067384044873, guid: 66adfe69979ad4526b49d2624ceb933b,
         type: 3}
       propertyPath: m_Name
@@ -2518,6 +2528,11 @@ PrefabInstance:
     - target: {fileID: 1954460058956655719, guid: 66adfe69979ad4526b49d2624ceb933b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100813327070500854, guid: 66adfe69979ad4526b49d2624ceb933b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4955368067384044873, guid: 66adfe69979ad4526b49d2624ceb933b,
