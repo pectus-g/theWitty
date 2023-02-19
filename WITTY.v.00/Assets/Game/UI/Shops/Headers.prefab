@@ -492,6 +492,11 @@ PrefabInstance:
       propertyPath: m_VerticalAlignment
       value: 512
       objectReference: {fileID: 0}
+    - target: {fileID: 5625217165353786961, guid: 7156ec72cfe8d489389fa8567f31fa71,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5710983836750377429, guid: 7156ec72cfe8d489389fa8567f31fa71,
         type: 3}
       propertyPath: m_Name
@@ -1046,6 +1051,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_VerticalAlignment
       value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5625217165353786961, guid: 7156ec72cfe8d489389fa8567f31fa71,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5710983836750377429, guid: 7156ec72cfe8d489389fa8567f31fa71,
         type: 3}
