@@ -9,5 +9,6 @@
             Pickup,
             FullPickup,
             Dialogue,
+            Shop
         }
  }
