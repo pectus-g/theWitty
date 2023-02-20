@@ -10,14 +10,30 @@ namespace RPG.Shops
 public class Shop : MonoBehaviour, IRaycastable
 {
     [SerializeField] string shopName;
-    
+
+     [SerializeField]
+     StockItemConfig[] stockConfig;
+
+    [System.Serializable]//to see and configure in the inspector
+    class StockItemConfig
+    {
+        public InventoryItem item;
+        public int initialStock;
+
+        [Range(0,100)]//discount percentage value min and max
+        public float buyingDiscountPercentage;
+    }
+    Dictionary<InventoryItem,int> transaction = new Dictionary<InventoryItem, int>();
     public event Action onChange;//check the canges in the shop
     public IEnumerable<ShopItem> GetFilteredItems() 
     {
-        yield return new ShopItem(InventoryItem.GetFromID("a24ed9a5-b18f-42ba-bfa1-16cf54dedea3"),10, 10.0f,0);//Unique ID's from resources
-        yield return new ShopItem(InventoryItem.GetFromID("f15c2c4e-29fd-4ae7-be92-a2ea19338233"),10, 10.0f,0);
-        yield return new ShopItem(InventoryItem.GetFromID("5255cf4c-58a8-48af-99bc-1517296ced41"),10, 10.0f,0);
-        yield return new ShopItem(InventoryItem.GetFromID("5255cf4c-58a8-48af-99bc-1517296ced41"),10, 10.0f,0);
+       foreach (StockItemConfig config in stockConfig)
+            {
+                float price = config.item.GetPrice() * (1 - config.buyingDiscountPercentage/100);
+                int quantityInTransaction=0;
+                transaction.TryGetValue(config.item,out quantityInTransaction);
+                yield return new ShopItem(config.item, config.initialStock, price, quantityInTransaction);
+            }
     }
     public void SelectFilter(ItemCategory category) {}
     public ItemCategory GetFilter(){return ItemCategory.None;}
@@ -30,7 +46,26 @@ public class Shop : MonoBehaviour, IRaycastable
     {
         return shopName;
     }
-    public void AddToTransaction(InventoryItem item, int quantity) {}
+    public void AddToTransaction(InventoryItem item, int quantity) 
+    {
+        if(!transaction.ContainsKey(item))
+        {
+            transaction[item]=0;
+
+        }
+
+        transaction[item]+=quantity;
+
+        if(transaction[item]<=0)
+        {
+            transaction.Remove(item);
+        }
+
+        if(onChange!=null)
+        {
+            onChange();
+        }
+    }
 
     public CursorType GetCursorType(){return CursorType.Shop;}
 
