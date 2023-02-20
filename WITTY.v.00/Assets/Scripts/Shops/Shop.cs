@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Inventories;
 using UnityEngine;
@@ -10,15 +10,15 @@ namespace RPG.Shops
 public class Shop : MonoBehaviour, IRaycastable
 {
     [SerializeField] string shopName;
-    public class ShopItem
-    {
-        InventoryItem item;
-        int availability;
-        float price;
-        int quantityInTransaction;
-    }
+    
     public event Action onChange;//check the canges in the shop
-    public IEnumerable<ShopItem> GetFilteredItems() {return null;}
+    public IEnumerable<ShopItem> GetFilteredItems() 
+    {
+        yield return new ShopItem(InventoryItem.GetFromID("a24ed9a5-b18f-42ba-bfa1-16cf54dedea3"),10, 10.0f,0);//Unique ID's from resources
+        yield return new ShopItem(InventoryItem.GetFromID("f15c2c4e-29fd-4ae7-be92-a2ea19338233"),10, 10.0f,0);
+        yield return new ShopItem(InventoryItem.GetFromID("5255cf4c-58a8-48af-99bc-1517296ced41"),10, 10.0f,0);
+        yield return new ShopItem(InventoryItem.GetFromID("5255cf4c-58a8-48af-99bc-1517296ced41"),10, 10.0f,0);
+    }
     public void SelectFilter(ItemCategory category) {}
     public ItemCategory GetFilter(){return ItemCategory.None;}
     public void SelectMode(bool isBuying) {}
