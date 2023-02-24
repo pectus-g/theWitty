@@ -24,7 +24,14 @@ public class Shop : MonoBehaviour, IRaycastable
         public float buyingDiscountPercentage;
     }
     Dictionary<InventoryItem,int> transaction = new Dictionary<InventoryItem, int>();
+    Shopper currentShopper=null;
     public event Action onChange;//check the canges in the shop
+
+    public void SetShopper(Shopper shopper)
+    {
+       currentShopper =shopper;
+    }
+
     public IEnumerable<ShopItem> GetFilteredItems() 
     {
        foreach (StockItemConfig config in stockConfig)
@@ -40,7 +47,27 @@ public class Shop : MonoBehaviour, IRaycastable
     public void SelectMode(bool isBuying) {}
     public bool isBuyingMode() {return true;}
     public bool CanTransact() {return true;}
-    public void ConfirmTransaction() {}
+    public void ConfirmTransaction()
+    {
+        Inventory shopperInventory =currentShopper.GetComponent<Inventory>();
+        if(shopperInventory==null){return;}
+
+        //transfer from the inventory 
+        var transactionSnapshot=new Dictionary<InventoryItem, int>(transaction);
+        foreach (InventoryItem item in transactionSnapshot.Keys)
+        {
+            int quantity = transactionSnapshot[item];
+           for (int i = 0; i < quantity; i++)
+           {
+            bool success= shopperInventory.AddToFirstEmptySlot(item,1);
+            if(success)
+           {
+            AddToTransaction(item,-1);
+           }
+           }
+        
+        }
+    }
     public float TransactionTotal() {return 0;}
     public string GetShopName()
     {

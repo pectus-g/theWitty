@@ -57,5 +57,6 @@ public class ShopUI : MonoBehaviour
     {
        shopper.SetActiveShop(null);
     }
+    public void ConfirmTransaction(){currentShop.ConfirmTransaction();}
 }
 }
