@@ -210,6 +210,7 @@ MonoBehaviour:
   listRoot: {fileID: 2341475599649485033}
   rowPrefab: {fileID: 4804227924797062060, guid: 66adfe69979ad4526b49d2624ceb933b,
     type: 3}
+  totalField: {fileID: 6530487239375725573}
 --- !u!224 &6522519246903148859 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6241406993517299520, guid: 965c300255fa34fcc873220ea00865bf,
@@ -970,6 +971,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c4430e65e4f474594d9f0741c2e9f6, type: 3}
+--- !u!114 &6530487239375725573 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7744086548863757574, guid: 80c4430e65e4f474594d9f0741c2e9f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 3591750604110792963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4840348613663562446
 PrefabInstance:
   m_ObjectHideFlags: 0

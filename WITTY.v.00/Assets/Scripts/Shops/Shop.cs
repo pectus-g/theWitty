@@ -24,7 +24,7 @@ public class Shop : MonoBehaviour, IRaycastable
         public float buyingDiscountPercentage;
     }
     Dictionary<InventoryItem,int> transaction = new Dictionary<InventoryItem, int>();
-    Shopper currentShopper=null;
+    Shopper currentShopper=null; 
     public event Action onChange;//check the canges in the shop
 
     public void SetShopper(Shopper shopper)
@@ -34,6 +34,10 @@ public class Shop : MonoBehaviour, IRaycastable
 
     public IEnumerable<ShopItem> GetFilteredItems() 
     {
+      return GetAllItem();
+    }
+    public IEnumerable<ShopItem> GetAllItem() 
+    {
        foreach (StockItemConfig config in stockConfig)
             {
                 float price = config.item.GetPrice() * (1 - config.buyingDiscountPercentage/100);
@@ -42,6 +46,8 @@ public class Shop : MonoBehaviour, IRaycastable
                 yield return new ShopItem(config.item, config.initialStock, price, quantityInTransaction);
             }
     }
+
+
     public void SelectFilter(ItemCategory category) {}
     public ItemCategory GetFilter(){return ItemCategory.None;}
     public void SelectMode(bool isBuying) {}
@@ -68,7 +74,14 @@ public class Shop : MonoBehaviour, IRaycastable
         
         }
     }
-    public float TransactionTotal() {return 0;}
+    public float TransactionTotal() {
+        float total=0;
+        foreach (ShopItem item in GetAllItem())
+        {
+            total +=item.GetPrice()*item.GetQuantityInTransaction();
+        }
+        return total;
+    }
     public string GetShopName()
     {
         return shopName;
