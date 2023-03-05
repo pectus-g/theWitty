@@ -212,6 +212,7 @@ MonoBehaviour:
     type: 3}
   totalField: {fileID: 6530487239375725573}
   confirmButton: {fileID: 374962816831820365}
+  switchButton: {fileID: 513159565529684918}
 --- !u!224 &6522519246903148859 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6241406993517299520, guid: 965c300255fa34fcc873220ea00865bf,
@@ -1613,6 +1614,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4421eb7bc1014d97ad0b32beb1b3858, type: 3}
+--- !u!114 &513159565529684918 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+    type: 3}
+  m_PrefabInstance: {fileID: 5846804216459807004}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5985068550888866023
 PrefabInstance:
   m_ObjectHideFlags: 0
