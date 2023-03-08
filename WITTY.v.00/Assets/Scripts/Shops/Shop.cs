@@ -4,6 +4,7 @@ using GameDevTV.Inventories;
 using UnityEngine;
 using System;
 using RPG.Control;
+using RPG.Stats;
 using RPG.Inventories;
 
 namespace RPG.Shops
@@ -26,11 +27,13 @@ public class Shop : MonoBehaviour, IRaycastable
 
         [Range(0,100)]//discount percentage value min and max
         public float buyingDiscountPercentage;
+        public int levelToUnlock=0;
     }
     Dictionary<InventoryItem,int> transaction = new Dictionary<InventoryItem, int>();
     Dictionary<InventoryItem, int> stock =new Dictionary<InventoryItem, int>();
     Shopper currentShopper=null; 
     bool isBuyingMode =true;
+    ItemCategory filter = ItemCategory.None;
     public event Action onChange;//check the canges in the shop
 private void Awake() {
     foreach (StockItemConfig config in stockConfig)
@@ -45,12 +48,23 @@ private void Awake() {
 
     public IEnumerable<ShopItem> GetFilteredItems() 
     {
-      return GetAllItems();
+        foreach (ShopItem shopItem in GetAllItems())
+        {
+        InventoryItem item = shopItem.GetInventoryItem();
+        if(filter == ItemCategory.None || item.GetCategory()==filter)
+        {
+            yield return shopItem;
+        }
+        }
+      
     }
     public IEnumerable<ShopItem> GetAllItems() 
     {
+        int shopperLevel=GetShopperLevel();
        foreach (StockItemConfig config in stockConfig)
             {
+                if(config.levelToUnlock>shopperLevel) continue;
+                
                 float price = GetPrice(config);
                 int quantityInTransaction = 0;
                 transaction.TryGetValue(config.item, out quantityInTransaction);
@@ -60,8 +74,20 @@ private void Awake() {
         }
 
        
-        public void SelectFilter(ItemCategory category) {}
-    public ItemCategory GetFilter(){return ItemCategory.None;}
+     public void SelectFilter(ItemCategory category) {
+            filter = category;
+            print(category);
+
+            if (onChange != null)
+            {
+                onChange();
+            }
+        }
+
+        public ItemCategory GetFilter() 
+        { 
+            return filter;
+        }
     public void SelectMode(bool isBuying)
     {isBuyingMode = isBuying;
      if(onChange!=null)
@@ -256,6 +282,14 @@ private void Awake() {
             }
         }
         return -1;
+    }
+    private int GetShopperLevel()
+    {
+        BaseStats stats = currentShopper.GetComponent<BaseStats>();
+        if(stats==null) return 0;
+
+        return stats.GetLevel();
+
     }
 }
 }

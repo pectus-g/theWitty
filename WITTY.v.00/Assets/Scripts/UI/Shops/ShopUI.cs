@@ -43,6 +43,13 @@ public class ShopUI : MonoBehaviour
         currentShop=shopper.GetActiveShop();
         gameObject.SetActive(currentShop!=null);
 
+      
+            foreach (FilterButtonUI button in GetComponentsInChildren<FilterButtonUI>())
+            {
+                button.SetShop(currentShop);
+            }
+
+
         if(currentShop==null) return;
         shopName.text=currentShop.GetShopName();
 
@@ -79,6 +86,10 @@ public class ShopUI : MonoBehaviour
             confirmText.text="Sell";
         }
         
+        foreach (FilterButtonUI button in GetComponentsInChildren<FilterButtonUI>())
+            {
+                button.RefreshUI();
+            }
     }
     public void Close()
     {
