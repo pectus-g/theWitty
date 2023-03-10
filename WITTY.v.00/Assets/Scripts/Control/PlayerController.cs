@@ -16,7 +16,7 @@ namespace RPG.Control
  public class PlayerController : MonoBehaviour
  { 
     Health health;
-   
+   ActionStore actionStore;
 
         [System.Serializable]
         struct CursorMapping
@@ -29,6 +29,7 @@ namespace RPG.Control
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
         [SerializeField] float raycastRadius =1f;
+        [SerializeField] int numberOfAbilities = 6;
        
        bool isDraggingUI=false;
         //haritada ne kadar uzağa gidebileceğinin değeri
@@ -36,15 +37,17 @@ namespace RPG.Control
     private void Awake()
     {
         health=GetComponent<Health>();
+      actionStore=GetComponent<ActionStore>();
     }
     private void Update()
-    {  CheckSpecialAbilityKeys();
+    {  //CheckSpecialAbilityKeys();
         if(InteractWithUI()) return;
          if(health.IsDead())
     {
          SetCursor(CursorType.None);
          return;
     } 
+    UseAbilities();
         if(InteractWithComponent()) return;
         
         if(InteractWithMovement()) return;
@@ -52,7 +55,7 @@ namespace RPG.Control
         SetCursor(CursorType.None);
         //print("nothing to do");
     }
-    private void CheckSpecialAbilityKeys()
+   /* private void CheckSpecialAbilityKeys()
         {
             var actionStore = GetComponent<ActionStore>();
             if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -79,7 +82,7 @@ namespace RPG.Control
             {
                 actionStore.Use(5, gameObject);
             }
-        }
+        }*/
     private bool InteractWithUI()
     {
         if(Input.GetMouseButtonUp(0))
@@ -98,6 +101,16 @@ namespace RPG.Control
         if(isDraggingUI){return true;}
         return false;
     }
+     private void UseAbilities()
+        {
+            for (int i = 0; i < numberOfAbilities; i++)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+                {
+                    actionStore.Use(i, gameObject);
+                }
+            }
+        }
     private bool InteractWithComponent()
     {
         RaycastHit[] hits = RaycastAllSorted();
