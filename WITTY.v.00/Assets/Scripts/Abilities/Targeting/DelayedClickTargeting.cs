@@ -16,13 +16,13 @@ namespace RPG.Abilities.Targeting
         [SerializeField] Transform targetingPrefab;
 
         Transform targetingPrefabInstance = null;
-        public override void StartTargeting(GameObject user, Action<IEnumerable<GameObject>> finished)
-        {
-            PlayerController playerController = user.GetComponent<PlayerController>();
-            playerController.StartCoroutine(Targeting(user, playerController, finished));
+       public override void StartTargeting(AbilityData data, Action finished)
+        { 
+            PlayerController playerController = data.GetUser().GetComponent<PlayerController>();
+            playerController.StartCoroutine(Targeting(data, playerController, finished));
         }
 
-        private IEnumerator Targeting(GameObject user, PlayerController playerController,  Action<IEnumerable<GameObject>> finished)
+         private IEnumerator Targeting(AbilityData data, PlayerController playerController, Action finished)
         {
             playerController.enabled = false;
             if(targetingPrefabInstance==null)
@@ -47,7 +47,8 @@ namespace RPG.Abilities.Targeting
                     yield return new WaitWhile(() => Input.GetMouseButton(0));
                     playerController.enabled = true;
                     targetingPrefabInstance.gameObject.SetActive(false);
-                    finished(GetGameObjectsInRadius(raycastHit.point));
+                    data.SetTargets(GetGameObjectsInRadius(raycastHit.point));
+                    finished();
                     yield break;
                 }
             }
