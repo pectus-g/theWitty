@@ -2,6 +2,8 @@ using GameDevTV.Inventories;
 using System.Collections.Generic;
 using UnityEngine;
 using RPG.Attributes;
+using RPG.Core;
+
 namespace RPG.Abilities
 {
     [CreateAssetMenu(fileName = "My Ability", menuName = "Abilities/Ability", order = 0)]
@@ -21,12 +23,16 @@ namespace RPG.Abilities
                 return;
             }
 
-               CooldownStore cooldownStore = user.GetComponent<CooldownStore>();
+            CooldownStore cooldownStore = user.GetComponent<CooldownStore>();
             if (cooldownStore.GetTimeRemaining(this) > 0)
             {
                 return;
             }
             AbilityData data = new AbilityData(user);
+
+           ActionScheduler actionScheduler = user.GetComponent<ActionScheduler>();
+           actionScheduler.StarAction(data);
+
             targetingStrategy.StartTargeting(data, 
                 () => {
                     TargetAquired(data);
@@ -34,6 +40,7 @@ namespace RPG.Abilities
         }
        private void TargetAquired(AbilityData data)
         {
+            if (data.IsCancelled()) return;
             Mana mana = data.GetUser().GetComponent<Mana>();
             if (!mana.UseMana(manaCost)) return;
 
