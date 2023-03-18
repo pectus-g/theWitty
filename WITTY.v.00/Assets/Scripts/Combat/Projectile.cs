@@ -17,6 +17,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float lifeAfterImpact =2;//bunu yanar görünüm için arttır
     [SerializeField] UnityEvent onHit;
     Health target = null;
+   Vector3 targetPoint;
     GameObject instigator=null;
     float damage =0;
 
@@ -27,8 +28,7 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(target ==null) return;
-       if(isHoming && !target.IsDead())
+          if (target != null && isHoming && !target.IsDead())
        {
          transform.LookAt(GetAimLocation());
        }
@@ -36,24 +36,40 @@ public class Projectile : MonoBehaviour
 
     }
     public void SetTarget(Health target,GameObject instigator, float damage)
+     {
+            SetTarget(instigator, damage, target);
+        }
+
+        public void SetTarget(Vector3 targetPoint, GameObject instigator, float damage)
+        {
+            SetTarget(instigator, damage, null, targetPoint);
+        }
+
+        public void SetTarget(GameObject instigator, float damage, Health target=null, Vector3 targetPoint=default)
     {
         this.target=target;
+          this.targetPoint = targetPoint;
         this.damage = damage;
         this.instigator=instigator;
 
         Destroy(gameObject,maxLifeTime);
     }
     private Vector3 GetAimLocation()
-    {
+    { if (target == null)
+            {
+                return targetPoint;
+            }
         CapsuleCollider targetCapsule = target.GetComponent<CapsuleCollider>();
         if(targetCapsule==null) {return target.transform.position;}
         return target.transform.position + Vector3.up * targetCapsule.height/2;
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<Health>()!=target) return; // if collision object has health component take damage if not return null
-        if(target.IsDead()) return;
-        target.TakeDamage(instigator, damage);
+             Health health = other.GetComponent<Health>();
+            if (target != null && health != target) return;
+            if (health == null || health.IsDead()) return;
+            if (other.gameObject == instigator) return;
+            health.TakeDamage(instigator, damage);
 
         speed=0;
         onHit.Invoke();
