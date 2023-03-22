@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Health
   m_EditorClassIdentifier: 
   itemID: 6bdf2ce9-2462-4c61-b06a-df31c446eaf5
-  displayName: Health Potion
-  description: Drink me
-  icon: {fileID: 21300000, guid: aba0f700d91d4fc4fa8c724899ab04ab, type: 3}
+  displayName: Healthy Hat
+  description: Drink me, Action Item
+  icon: {fileID: 21300000, guid: c1b61b3a91732a747a8496fc75a13fe2, type: 3}
   pickup: {fileID: 8275099870367938892, guid: f4c81935829234fe9af24c31e2964db8, type: 3}
   stackable: 1
   price: 3
