@@ -132,6 +132,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bc5bedacfeaa43329cb48d0cdda81f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &319370976130516514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699457920981225580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a514c47ab6f4efb942fdff160069b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxMana: 200
+  manaRegenRate: 2
 --- !u!114 &518226140665884378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 16
---- !u!114 &319370976130516514
+--- !u!114 &2776692929182737816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,10 +293,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1699457920981225580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83a514c47ab6f4efb942fdff160069b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 39e29daebb8c544f9b6b79ec2a9f610f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMana: 200
 --- !u!4 &1699457921860774298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,

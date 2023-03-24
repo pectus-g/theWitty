@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5137426081112839265}
   - component: {fileID: 1765486154536806313}
+  - component: {fileID: 8646256637494280483}
   m_Layer: 5
   m_Name: Traits UI
   m_TagString: Untagged
@@ -52,6 +53,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggleKey: 116
   uiContainer: {fileID: 6187561063415145042}
+--- !u!114 &8646256637494280483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756101827010761160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79faae00f0ca14e32b414b54c9994c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unassignedPointsText: {fileID: 2121656307078318113}
+  commitButton: {fileID: 836303979795038049}
 --- !u!1001 &85143366345653267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -168,6 +183,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564012866277212642, guid: 58e5bfbd2dc6048b1943454431296c2a,
+        type: 3}
+      propertyPath: trait
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5396242069919233653, guid: 58e5bfbd2dc6048b1943454431296c2a,
         type: 3}
@@ -292,6 +312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564012866277212642, guid: 58e5bfbd2dc6048b1943454431296c2a,
+        type: 3}
+      propertyPath: trait
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5396242069919233653, guid: 58e5bfbd2dc6048b1943454431296c2a,
         type: 3}
@@ -695,6 +720,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4564012866277212642, guid: 58e5bfbd2dc6048b1943454431296c2a,
+        type: 3}
+      propertyPath: trait
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5396242069919233653, guid: 58e5bfbd2dc6048b1943454431296c2a,
         type: 3}
       propertyPath: m_Name
@@ -856,6 +886,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7156ec72cfe8d489389fa8567f31fa71, type: 3}
+--- !u!114 &2121656307078318113 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5625217165353786961, guid: 7156ec72cfe8d489389fa8567f31fa71,
+    type: 3}
+  m_PrefabInstance: {fileID: 6008200058653726320}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6524727917013681725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1114,6 +1156,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4421eb7bc1014d97ad0b32beb1b3858, type: 3}
+--- !u!114 &836303979795038049 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+    type: 3}
+  m_PrefabInstance: {fileID: 6746454480688508363}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8287631272831511250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1517,6 +1571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564012866277212642, guid: 58e5bfbd2dc6048b1943454431296c2a,
+        type: 3}
+      propertyPath: trait
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5396242069919233653, guid: 58e5bfbd2dc6048b1943454431296c2a,
         type: 3}
