@@ -98,12 +98,15 @@ MonoBehaviour:
     - stat: 5
       levels:
       - 2
+      - 3
       - 4
       - 5
+    - stat: 6
+      levels:
+      - 3
+      - 5
+      - 7
       - 10
-      - 20
-      - 30
-      - 40
   - characterClass: 1
     stats:
     - stat: 0
