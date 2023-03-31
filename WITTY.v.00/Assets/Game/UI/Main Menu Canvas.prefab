@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2882594754760329428}
   - component: {fileID: 2917327261902931272}
   - component: {fileID: 1657753476199279294}
+  - component: {fileID: 360175828889310189}
   m_Layer: 5
   m_Name: Main Menu Canvas
   m_TagString: Untagged
@@ -114,6 +115,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &360175828889310189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5568625197723127535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb9e82661acc49938fb2aefb34251c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistentObjectPrefab: {fileID: 3574995589721808671, guid: b00e7b5db3e7c45ba83fd403973fe4e9,
+    type: 3}
 --- !u!1 &6123750621707946063
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6759288969070649812}
   - component: {fileID: 4911659733914794235}
+  - component: {fileID: 7957733131383912403}
   m_Layer: 5
   m_Name: Main Menu
   m_TagString: Untagged
@@ -181,6 +197,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &7957733131383912403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6123750621707946063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8c0bb12d5ba40079fd186dfd295c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6914359851366341596
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,6 +379,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1358183949101552386, guid: 9f99ee12813a847a9b305b5aa8025f43,
         type: 2}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7957733131383912403}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ContinueGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RPG.UI.MainMenuUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8273239699298524800, guid: f4421eb7bc1014d97ad0b32beb1b3858,
         type: 3}
       propertyPath: m_Pivot.x
@@ -559,7 +622,7 @@ PrefabInstance:
     - target: {fileID: 6241406993517299520, guid: 965c300255fa34fcc873220ea00865bf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.5004883
+      value: -439.86432
       objectReference: {fileID: 0}
     - target: {fileID: 6241406993517299520, guid: 965c300255fa34fcc873220ea00865bf,
         type: 3}
