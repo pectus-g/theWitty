@@ -27,7 +27,6 @@ namespace RPG.UI
 
         public void NewGame()
         {
-            savingWrapper.value.NewGame(newGameNameField.text);
-        }
+savingWrapper.value.NewGame(newGameNameField.text);        }
     }
 }

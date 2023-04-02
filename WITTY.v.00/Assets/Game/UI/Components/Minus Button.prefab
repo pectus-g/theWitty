@@ -37,6 +37,18 @@ PrefabInstance:
       propertyPath: m_text
       value: '-'
       objectReference: {fileID: 0}
+    - target: {fileID: 5184007309575742451, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b32440f201d94ebda17403ef6de605b,
+        type: 2}
+    - target: {fileID: 5184007309575742451, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2202653087327618305, guid: 0b32440f201d94ebda17403ef6de605b,
+        type: 2}
     - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
