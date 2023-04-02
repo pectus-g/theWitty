@@ -1,27 +1,56 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using GameDevTV.Saving;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace RPG.SceneManagement
 {
 public class SavingWrapper : MonoBehaviour
 {
 
-const string defaultSaveFile = "save";
-[SerializeField] float fadeInTime=0.2f;
+private const string currentSaveKey = "currentSaveName";
+[SerializeField] float fadeInTime=0.1f;
 // listen key events
- [SerializeField] float fadeOutTime = 0.2f;
+ [SerializeField] float fadeOutTime = 0.1f;
+[SerializeField] int firstFieldBuildIndex = 1;
 
         public void ContinueGame() 
         {
+            if(!PlayerPrefs.HasKey(currentSaveKey)) return;
+            if(!GetComponent<SavingSystem>().SaveFileExists(GetCurrentSave())) return;
             StartCoroutine(LoadLastScene());
         }
-    private IEnumerator LoadLastScene()
-    {
+         public void NewGame(string saveFile)
+        {
+            if(!String.IsNullOrEmpty(saveFile)) return;
+            SetCurrentSave(saveFile);
+            StartCoroutine(LoadFirstScene());
+        }
+
+        private void SetCurrentSave(string saveFile)
+        {
+            PlayerPrefs.SetString(currentSaveKey, saveFile);
+        }
+
+        private string GetCurrentSave()
+        {
+            return PlayerPrefs.GetString(currentSaveKey);
+        }
+
+        private IEnumerator LoadLastScene()
+        {
+            Fader fader = FindObjectOfType<Fader>();
+            yield return fader.FadeOut(fadeOutTime);
+            yield return GetComponent<SavingSystem>().LoadLastScene(GetCurrentSave());
+            yield return fader.FadeIn(fadeInTime);
+        }
+
+        private IEnumerator LoadFirstScene()
+        {
         Fader fader=FindObjectOfType<Fader>();
         yield return fader.FadeOut(fadeOutTime);
-        yield return GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile);
+        yield return SceneManager.LoadSceneAsync(firstFieldBuildIndex);
         yield return fader.FadeIn(fadeInTime);
     }
     void Update()
@@ -41,15 +70,15 @@ const string defaultSaveFile = "save";
     }
     public void Load()
     {
-        GetComponent<SavingSystem>().Load(defaultSaveFile);
+    GetComponent<SavingSystem>().Load(GetCurrentSave());
     }
      public void Save()
     {
-        GetComponent<SavingSystem>().Save(defaultSaveFile);
+         GetComponent<SavingSystem>().Save(GetCurrentSave());
     }
     private void Delete()
     {
-        GetComponent<SavingSystem>().Delete(defaultSaveFile);
+        GetComponent<SavingSystem>().Delete(GetCurrentSave());
     }
 }
 }
