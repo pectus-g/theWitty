@@ -2235,6 +2235,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1358183949101552386, guid: 9f99ee12813a847a9b305b5aa8025f43,
         type: 2}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7957646945707352760}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RPG.UI.MainMenuUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213593727482090154, guid: f4421eb7bc1014d97ad0b32beb1b3858,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8273239699298524800, guid: f4421eb7bc1014d97ad0b32beb1b3858,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2660,12 +2695,12 @@ PrefabInstance:
     - target: {fileID: 2920728865552685657, guid: d7fef06ed3e764c67a1c07a77b3f2be4,
         type: 3}
       propertyPath: m_Size
-      value: 0.71712273
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2920728865552685657, guid: d7fef06ed3e764c67a1c07a77b3f2be4,
         type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5349711782430048058, guid: d7fef06ed3e764c67a1c07a77b3f2be4,
         type: 3}

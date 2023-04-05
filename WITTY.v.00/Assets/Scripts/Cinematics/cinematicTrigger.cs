@@ -4,20 +4,19 @@ using UnityEngine;
 using UnityEngine.Playables;
 
 namespace RPG.Cinematics
+
 {
-public class cinematicTrigger : MonoBehaviour
-{
-    bool alreadyTrggered =false;
-    private void OnTriggerEnter(Collider other)
-{
-    if(!alreadyTrggered && other.gameObject.tag== "Player")
+    public class CinematicTrigger : MonoBehaviour
     {
-        alreadyTrggered =true;
-        GetComponent<PlayableDirector>().Play();
+        bool alreadyTriggered = false;
+        
+        private void OnTriggerEnter(Collider other) 
+        {
+            if(!alreadyTriggered && other.gameObject.tag == "Player")
+            {
+                alreadyTriggered = true;
+                GetComponent<PlayableDirector>().Play();
+            }
+        }
     }
-   
-}   
 }
-
-}
-
