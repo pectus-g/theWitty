@@ -21,7 +21,7 @@ namespace RPG.UI
         private void OnDisable()
         {  
             if (playerController == null) return;
-            Time.timeScale = 1;
+            Time.timeScale = 5; // debugging purpuses
             playerController.enabled = true;
         }
 
