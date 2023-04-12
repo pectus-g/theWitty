@@ -33,7 +33,7 @@ namespace RPG.Control
         }
 
         private IEnumerator RespawnRoutine()
-        {
+        {//UNCOMMENT THIS SAVINGS AFTER THE TESTING ENCOUNTERS
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
             // savingWrapper.Save();
             yield return new WaitForSeconds(respawnDelay);
