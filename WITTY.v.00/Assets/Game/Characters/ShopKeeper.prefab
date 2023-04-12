@@ -437,7 +437,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44906d8cb4c4141eabce92ab310ca42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shopName: 
+  shopName: Right Twix's Shop
+  sellingPercentage: 50
+  maximumBarterDiscount: 80
+  stockConfig:
+  - item: {fileID: 11400000, guid: ef805b47c2066463189aef0657e41df4, type: 2}
+    initialStock: 40
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: c4700f8b5a08d486b9aaba44cc3ab890, type: 2}
+    initialStock: 40
+    buyingDiscountPercentage: 4.7
+    levelToUnlock: 3
+  - item: {fileID: 11400000, guid: 8b42d37fe4244427da434b54e99d51d5, type: 2}
+    initialStock: 2
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: a217a58c3362b43a3a2b6aa01ec3faa6, type: 2}
+    initialStock: 12
+    buyingDiscountPercentage: 20
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 91e668fdacc59438bab3ec83851137f1, type: 2}
+    initialStock: 2
+    buyingDiscountPercentage: 0
+    levelToUnlock: 4
+  - item: {fileID: 11400000, guid: 2565e9eb512684798a1dbd24c521442c, type: 2}
+    initialStock: 2
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 2565e9eb512684798a1dbd24c521442c, type: 2}
+    initialStock: 4
+    buyingDiscountPercentage: 0
+    levelToUnlock: 2
+  - item: {fileID: 11400000, guid: 36566a7f70a4a46a79510764c7764d13, type: 2}
+    initialStock: 1
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 4790598ea6d4b4922867cc83c38e041e, type: 2}
+    initialStock: 20
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 392b5406241024c17a072ca9958dadd6, type: 2}
+    initialStock: 20
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
 --- !u!4 &5285707594437098142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
