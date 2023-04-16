@@ -20,7 +20,9 @@ public class AIConversant : MonoBehaviour, IRaycastable//when you hover over the
    {
     return false;
    }
-    if (GetComponent<Health>().IsDead()) return false;
+    Health health = GetComponent<Health>();
+    if (health && health.IsDead()) return false;
+
    if(Input.GetMouseButtonDown(0))
    {
     callingController.GetComponent<PlayerConversant>().StartDialogue(this,dialogue);

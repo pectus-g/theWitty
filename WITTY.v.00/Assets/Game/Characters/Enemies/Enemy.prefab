@@ -153,18 +153,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 33.75012
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.00000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 32.993546
       objectReference: {fileID: 0}
     - target: {fileID: 1205471618767204004, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
@@ -214,12 +229,22 @@ PrefabInstance:
     - target: {fileID: 5993251353864285721, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: startingLevel
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5993251353864285721, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: characterClass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993251353864285721, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: shouldUseModifiers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993251353864285721, guid: 27df493104db2484fa45c9d047cc4243,
+        type: 3}
+      propertyPath: levelUpParticleEffect
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7964984582261585015, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
@@ -234,7 +259,7 @@ PrefabInstance:
     - target: {fileID: 8730895200432381166, guid: 27df493104db2484fa45c9d047cc4243,
         type: 3}
       propertyPath: uniqueIdentifier
-      value: 
+      value: e290d564-f994-4f2b-bb84-3f46e1c7adba
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27df493104db2484fa45c9d047cc4243, type: 3}

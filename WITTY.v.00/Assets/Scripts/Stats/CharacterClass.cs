@@ -8,7 +8,8 @@ namespace RPG.Stats
         Mage,
         Archer,
         Bomber,
-        FireMan
+        FireMan,
+        Heavy
         //karakter eklerken buraya geri dön ve düzenle. Eklemek istediğin her özel karakteri buraya eklemelisin.
     }
 }
