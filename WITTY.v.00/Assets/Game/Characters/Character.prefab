@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 3549123495138171334}
   - component: {fileID: 5993251353864285721}
   - component: {fileID: 1429562953}
-  - component: {fileID: 8780315740997232923}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -108,6 +107,7 @@ MonoBehaviour:
   rightHandTransform: {fileID: 0}
   leftHandTransform: {fileID: 0}
   defaultWeapon: {fileID: 11400000, guid: 995c2d37aec0d44f1b1f1d866f75adb6, type: 2}
+  autoAttackRange: 4
 --- !u!114 &1831285435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,12 +226,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115f3fbfc420c48e6b3cd7cfc02bb225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingLevel: 6
-  characterClass: 0
+  startingLevel: 1
+  characterClass: 1
   progression: {fileID: 11400000, guid: b7b2bf26680e64524aa733c471ec50ce, type: 2}
-  levelUpParticleEffect: {fileID: 5601815269790523027, guid: 4b5e4d36c28604ef1a7a9550cbc78c24,
-    type: 3}
-  shouldUseModifiers: 1
+  levelUpParticleEffect: {fileID: 0}
+  shouldUseModifiers: 0
 --- !u!136 &1429562953
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -246,19 +245,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1.03, z: 0}
---- !u!114 &8780315740997232923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205471617880971090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9898826c1a2724c8f8e50c5609fe0fab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  experiencePoints: 0
 --- !u!1 &1310159456318419837
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +604,7 @@ PrefabInstance:
     - target: {fileID: 3268051904729844062, guid: 2779d90cbf0f6479bb5454ddb2991a07,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3268051904729844062, guid: 2779d90cbf0f6479bb5454ddb2991a07,
         type: 3}
